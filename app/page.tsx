@@ -72,10 +72,10 @@ export default function Home() {
           </nav>
         </aside>
       </div>
-      <div className={"lg:ml-64 mt- p-10 min-h-screen"}>
+      <div className={"lg:ml-64 lg:p-10 p-6 min-h-screen"}>
         <div>
           <p className={"lg:text-3xl text-xl font-semibold"}>
-            My name is <span className={"text-[#007FFF] font-extrabold lg:text-4xl text-xl"}>Gustave Montana</span> and I&apos;m a
+            My name is <span className={"text-[#007FFF] font-extrabold lg:text-4xl text-2xl"}>Gustave Montana</span> and I&apos;m a
             software engineer from Madison, CT. I am a Senior at
             Worcester Polytechnic Institute studying Computer Science with a minor in Data Science. I have a passion
             for UI/UX design and front-end development, with plenty of experience in full-stack development as well.
