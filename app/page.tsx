@@ -75,11 +75,11 @@ export default function Home() {
       <div className={"lg:ml-64 mt- p-10 min-h-screen"}>
         <div>
           <p className={"text-3xl font-semibold"}>
-            My name is <span className={"text-[#007FFF] font-extrabold text-4xl"}>Gustave Montana</span> and I'm a
+            My name is <span className={"text-[#007FFF] font-extrabold text-4xl"}>Gustave Montana</span> and I&apos;m a
             software engineer from Madison, CT. I am a Senior at
             Worcester Polytechnic Institute studying Computer Science with a minor in Data Science. I have a passion
             for UI/UX design and front-end development, with plenty of experience in full-stack development as well.
-            I'm currently interning at InvoiceCloud for the Summer of '24 as a Software Development Intern.
+            I&apos;m currently interning at InvoiceCloud for the Summer of &apos;24 as a Software Development Intern.
           </p>
         </div>
         <hr className={"h-px mt-12 mb-6 dark:bg-neutral-700 bg-neutral-300 border-0"}/>
