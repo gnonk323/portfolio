@@ -1,112 +1,101 @@
-import Image from "next/image";
+import ProjectCard from "./Components/ProjectCard";
+import Footer from "./Components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+    <main>
+      <div>
+        <div className={"lg:hidden flex flex-row justify-between w-screen top-0 p-6 border-b dark:border-neutral-700 border-neutral-300"}>
+          <a href={"/"}>
+            <h1 className={"text-xl font-extrabold text-[#007FFF]"}>Gustave<br/>Montana</h1>
           </a>
+          <div className={"flex items-center gap-4"}>
+            <a href="/about" className={"text-sm font-semibold"}>About Me</a>
+            <a href="/resume" className={"text-sm font-semibold"}>Resume</a>
+          </div>
         </div>
+        <aside
+          className={"lg:block hidden w-64 h-screen p-10 border-r dark:border-neutral-700 border-neutral-300 fixed"}>
+        <nav>
+            <a href={"/"}>
+              <h1 className={"text-6xl font-black font-serif mb-6 text-[#007FFF]"}>GM</h1>
+            </a>
+            <div>
+              <ul>
+                <li className={"mb-2"}>
+                  <a href={"/about"} className={"text-xl font-bold"}>About Me</a>
+                </li>
+                <li>
+                  <a href={"/resume"} className={"text-xl font-bold"}>Resume</a>
+                </li>
+              </ul>
+            </div>
+            <hr className={"h-px my-6 dark:bg-neutral-700 bg-neutral-300 border-0"}/>
+            <div>
+              <h2 className={"text-sm font-semibold text-[#007FFF] mb-2"}>WORK</h2>
+              <ul>
+                <li>
+                  <a href="https://invoicecloud.net/" target={"_blank"}>InvoiceCloud</a>
+                </li>
+              </ul>
+            </div>
+            <hr className={"h-px my-6 dark:bg-neutral-700 bg-neutral-300 border-0"}/>
+            <div>
+              <h2 className={"text-sm font-semibold text-[#007FFF] mb-2"}>PROJECTS</h2>
+              <ul>
+                <li className={"mb-1"}>
+                  <a href="/bwh-app">Hospital Kiosk</a>
+                </li>
+                <li className={"mb-1"}>
+                  <a href={"/dct"}>Data Collection Tool</a>
+                </li>
+                <li>
+                  <a href="/tictactoe">No-Tie TicTacToe</a>
+                </li>
+              </ul>
+            </div>
+            <hr className={"h-px my-6 dark:bg-neutral-700 bg-neutral-300 border-0"}/>
+            <div>
+              <h2 className={"text-sm font-semibold text-[#007FFF] mb-2"}>CONTACT ME</h2>
+              <ul>
+                <li className={"mb-1"}>
+                  <a href="">Email</a>
+                </li>
+                <li className={"mb-1"}>
+                  <a href="">LinkedIn</a>
+                </li>
+                <li>
+                  <a href="">GitHub</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </aside>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+      <div className={"lg:ml-64 mt- p-10 min-h-screen"}>
+        <div>
+          <p className={"text-3xl font-semibold"}>
+            My name is <span className={"text-[#007FFF] font-extrabold text-4xl"}>Gustave Montana</span> and I&apos;m a
+            software engineer from Madison, CT. I am a Senior at
+            Worcester Polytechnic Institute studying Computer Science with a minor in Data Science. I have a passion
+            for UI/UX design and front-end development, with plenty of experience in full-stack development as well.
+            I&apos;m currently interning at InvoiceCloud for the Summer of &apos;24 as a Software Development Intern.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        </div>
+        <hr className={"h-px mt-12 mb-6 dark:bg-neutral-700 bg-neutral-300 border-0"}/>
+        <h2 className={"text-lg text-[#007FFF] font-semibold mb-4"}>MY PROJECTS</h2>
+        <div className={"flex lg:flex-row flex-col gap-6 mb-12"}>
+          <ProjectCard title={"Hospital Kiosk"}
+                       description={"Kiosk Web App for Brigham and Women's Hospital in Boston, MA. Capable of hospital pathfinding and so much more!"}
+                       image={"/bwhMOCK.png"} path={"/bwh"}/>
+          <ProjectCard title={"Data Collection Tool"}
+                       description={"An app for collecting various types of data in a team, designed for WPI's own IQP study abroad program."}
+                       image={"/mqpMOCK.png"} path={"/bwh"}/>
+          <ProjectCard title={"'Endless' TicTacToe"}
+                       description={"Each player is only allowed have 3 X's or O's on the board at once, making it impossible for the game to end in a tie!"}
+                       image={"/tictactoeMOCK.png"} path={"/bwh"}/>
+        </div>
+        <Footer/>
       </div>
     </main>
   );
