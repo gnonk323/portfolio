@@ -8,7 +8,7 @@ export default function Kiosk() {
         <div className="lg:flex lg:flex-row block justify-between items-center">
           <div className="lg:mb-0 mb-2">
             <h1 className="lg:text-5xl text-4xl font-semibold">Hospital Kiosk App</h1>
-            <h2 className="lg:text-xl text-neutral-400">For Mass General Brigham and Women's Hospital</h2>
+            <h2 className="lg:text-xl text-neutral-400">For Mass General Brigham and Women&apos;s Hospital</h2>
           </div>
           <div className="flex gap-3 lg:text-base text-sm">
             <a href="/bwh-report.pdf" target="_blank" className="hover:text-neutral-400 transition-colors">Report</a>
@@ -121,7 +121,7 @@ export default function Kiosk() {
           </div>
           <div className="bg-neutral-700 rounded-md p-3">
             <p className="font-semibold mb-1">Leadership</p>
-            <p className="text-sm text-neutral-300">I didn't start out a lead developer, but by the end of the term I had taken a leadership role. Team members came to me with questions, and I was able to develop my leadership skills.</p>
+            <p className="text-sm text-neutral-300">I didn&apos;t start out a lead developer, but by the end of the term I had taken a leadership role. Team members came to me with questions, and I was able to develop my leadership skills.</p>
           </div>
           <div className="bg-neutral-700 rounded-md p-3">
             <p className="font-semibold mb-1">Agile Development</p>
@@ -129,7 +129,7 @@ export default function Kiosk() {
           </div>
         </div>
         <p>
-          All in all, this project was an incredible learning experience for me! It was the first time I took on a large full-stack application like this, and working in a team this large on a software development project was a first too. I got the chance to take on a leadership role, and I learned a lot about the Agile software development process. I also learned a lot about the importance of communication in a team, and how to work with people who have different skill sets and backgrounds than me. I've known I have a passion for front-end development for a while, and this was a great opportunity to throw myself into a large UI undertaking. Overall, I’m really proud of the work we did!
+          All in all, this project was an incredible learning experience for me! It was the first time I took on a large full-stack application like this, and working in a team this large on a software development project was a first too. I got the chance to take on a leadership role, and I learned a lot about the Agile software development process. I also learned a lot about the importance of communication in a team, and how to work with people who have different skill sets and backgrounds than me. I&apos;ve known I have a passion for front-end development for a while, and this was a great opportunity to throw myself into a large UI undertaking. Overall, I’m really proud of the work we did!
         </p>
         <br />
         <br />
