@@ -19,7 +19,7 @@ export default function About() {
               I am currently working as a Software Development Intern at InvoiceCloud for the Summer of 2024.
             </p>
           </div>
-          <img src="/gustave-montana.jpg" alt="headshot" className={"rounded-full lg:size-52 ml-12 border-solid border-2 border-blue-500 shadow-md hidden lg:block"} />
+          <img src="/images/gustave-montana.jpg" alt="headshot" className={"rounded-full lg:size-52 ml-12 border-solid border-2 border-blue-500 shadow-md hidden lg:block"} />
         </div>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <div className={"flex lg:flex-row flex-col lg:gap-10"}>
@@ -38,7 +38,7 @@ export default function About() {
         </div>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <div className="flex justify-between h-full lg:mb-12">
-          <img src="/BoyntonHall.jpg" alt="WPI Campus" className="w-1/2 object-cover rounded-md mr-16 hidden lg:block" />
+          <img src="/images/BoyntonHall.jpg" alt="WPI Campus" className="w-1/2 object-cover rounded-md mr-16 hidden lg:block" />
           <div className="flex flex-col lg:w-1/2 lg:justify-between lg:gap-0 gap-5">
             <div className="flex gap-2 items-center">
               <AcademicCapIcon className="h-5 w-5 text-[#007FFF]" />

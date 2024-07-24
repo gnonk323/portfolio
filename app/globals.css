@@ -4,12 +4,12 @@
 
 :root {
   --foreground-rgb: 20, 20, 20;
-  --background-rgb: 245, 245, 245;
+  --background-rgb: 229, 229, 229;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 245, 245, 245;
+    --foreground-rgb: 229, 229, 229;
     --background-rgb: 25, 25, 25;
   }
 }
@@ -35,9 +35,4 @@ li a:hover {
 
 .img-hover-zoom:hover {
   transform: scale(1.15); /* Zoom in slightly */
-}
-
-.fancy-text {
-  font-family: "Big Caslon";
-  font-style: italic;
 }

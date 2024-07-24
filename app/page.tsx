@@ -27,13 +27,13 @@ export default function Home() {
         <div className={"flex lg:flex-row flex-col lg:justify-between gap-10 mb-12"}>
           <ProjectCard title={"Hospital Kiosk"}
                        description={"Kiosk Web App for Brigham and Women's Hospital in Boston, MA. Capable of hospital pathfinding and so much more!"}
-                       image={"/bwhMOCK.png"} path={"/bwh"}/>
+                       image={"/images/bwhMOCK.png"} path={"/kiosk"}/>
           <ProjectCard title={"Data Collection Tool"}
                        description={"An app for collecting various types of data in a team, designed for WPI's own IQP study abroad program."}
-                       image={"/mqpMOCK.png"} path={"/bwh"}/>
+                       image={"/images/mqpMOCK.png"} path={"/dct"}/>
           <ProjectCard title={"'Endless' TicTacToe"}
                        description={"Each player is only allowed have 3 X's or O's on the board at once, making it impossible for the game to end in a tie!"}
-                       image={"/tictactoeMOCK.png"} path={"/bwh"}/>
+                       image={"/images/tictactoeMOCK.png"} path={"/tictactoe"}/>
         </div>
         <Footer/>
       </div>

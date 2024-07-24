@@ -39,7 +39,7 @@ export default function Navbar() {
             <h2 className={"text-sm font-semibold text-[#007FFF] mb-2"}>PROJECTS</h2>
             <ul>
               <li className={"mb-1"}>
-                <a href="/bwh-app">Hospital Kiosk</a>
+                <a href="/kiosk">Hospital Kiosk</a>
               </li>
               <li className={"mb-1"}>
                 <a href={"/dct"}>Data Collection Tool</a>
