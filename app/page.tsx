@@ -10,7 +10,7 @@ export default function Home() {
       <div className={"lg:ml-64 lg:p-10 p-6 min-h-screen"}>
         <div>
           <TypeAnimation
-            sequence={["Hi, I'm Gustave Montana!"]}
+            sequence={["Hi, I&apos;m Gustave Montana!"]}
             speed={30}
             repeat={1}
             className={"lg:text-7xl text-xl font-mono"}
