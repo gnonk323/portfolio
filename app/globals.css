@@ -30,9 +30,14 @@ li a:hover {
 }
 
 .img-hover-zoom {
-  transition: transform 0.3s ease; /* Smooth transition */
+  transition: transform 0.2s ease; /* Smooth transition */
 }
 
 .img-hover-zoom:hover {
   transform: scale(1.1); /* Zoom in slightly */
+}
+
+.fancy-text {
+  font-family: "Big Caslon";
+  font-style: italic;
 }

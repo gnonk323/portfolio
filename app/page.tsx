@@ -1,20 +1,28 @@
+"use client"
+
 import ProjectCard from "@/app/components/ProjectCard";
 import Footer from "@/app/components/Footer";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   return (
     <main>
       <div className={"lg:ml-64 lg:p-10 p-6 min-h-screen"}>
         <div>
-          <p className={"lg:text-3xl text-xl font-semibold"}>
-            My name is <span className={"text-[#007FFF] font-extrabold lg:text-4xl text-2xl"}>Gustave Montana</span> and I&apos;m a
-            software engineer from Madison, CT. I am a Senior at <a href={"https://www.wpi.edu/academics/departments/computer-science"} target={"_blank"} className={"underline decoration-dotted cursor-pointer"}>Worcester Polytechnic Institute</a> studying
-            Computer Science with a minor in Data Science. I have a passion
-            for UI/UX design and front-end development, with plenty of experience in full-stack development as well!
-            I&apos;m currently interning at InvoiceCloud for the Summer of &apos;24 as a Software Development Intern.
+          <TypeAnimation
+            sequence={["Hi, I'm Gustave Montana!"]}
+            speed={30}
+            repeat={1}
+            className={"lg:text-7xl text-xl font-mono"}
+          />
+        </div>
+        <hr className={"h-px my-6 dark:bg-neutral-700 bg-neutral-300 border-0"}/>
+        <div>
+          <p className="text-xl">
+            I'm a Senior studying Computer Sciecne and Data Science at <a href={"https://www.wpi.edu/academics/departments/computer-science"} target={"_blank"} className={"underline decoration-dotted lg:hover:text-neutral-400 transition-colors cursor-pointer"}>Worcester Polytechnic Institute</a>, with a passion for UI/UX design and front-end development.
           </p>
         </div>
-        <hr className={"h-px mt-12 mb-6 dark:bg-neutral-700 bg-neutral-300 border-0"}/>
+        <hr className={"h-px my-6 dark:bg-neutral-700 bg-neutral-300 border-0"}/>
         <h2 className={"text-lg text-[#007FFF] font-semibold mb-4"}>MY PROJECTS</h2>
         <div className={"flex lg:flex-row flex-col lg:gap-6 gap-10 mb-12"}>
           <ProjectCard title={"Hospital Kiosk"}
