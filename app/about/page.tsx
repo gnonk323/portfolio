@@ -12,7 +12,7 @@ export default function About() {
               <h2 className={"text-lg text-[#007FFF] font-semibold"}>ABOUT ME</h2>
             </div>
             <p className={"lg:text-2xl text-lg"}>
-              I am a Computer Science student at Worcester Polytechnic Institute, graduating in the Spring of 2024, and
+              I am a Computer Science student at Worcester Polytechnic Institute, graduating in the Spring of 2025, and
               looking to start my career in software engineering.
               Throughout my various project experiences, I&apos;ve found a passion for front-end development and UI/UX
               design.

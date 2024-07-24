@@ -9,7 +9,7 @@ export default function ProjectCard({ title, description, image, path }: Project
   return (
     <div>
       <div className={"mb-3 p-2"}>
-        <h1 className={"text-2xl font-bold"}>{title}</h1>
+        <h1 className={"text-2xl font-bold mb-2"}>{title}</h1>
         <p className={"text-sm h-16"}>{description}</p>
       </div>
       <a href={path}>
