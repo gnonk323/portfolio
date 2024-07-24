@@ -34,7 +34,7 @@ li a:hover {
 }
 
 .img-hover-zoom:hover {
-  transform: scale(1.1); /* Zoom in slightly */
+  transform: scale(1.15); /* Zoom in slightly */
 }
 
 .fancy-text {

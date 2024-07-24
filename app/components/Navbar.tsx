@@ -8,16 +8,14 @@ export default function Navbar() {
         </a>
         <div className={"flex items-center gap-4"}>
           <a href="/about" className={"text-sm font-semibold"}>About Me</a>
-          <a href="/resume" className={"text-sm font-semibold"}>Resume</a>
+          <a href="/gustave-montana-resume.pdf" target="_blank" className={"text-sm font-semibold"}>Resume</a>
         </div>
       </div>
       <aside
         className={"lg:block hidden w-64 h-screen p-10 border-r dark:border-neutral-700 border-neutral-300 fixed"}>
         <nav>
-          <a href={"/"}>
-            <h1 className={"text-6xl font-black font-serif mb-6 text-[#007FFF]"}>GM</h1>
-          </a>
-          <div>
+          <a href="/" className={"text-6xl font-black font-serif text-[#007FFF] hover:text-[#0065CC] cursor-pointer transition-colors"}>GM</a>
+          <div className="mt-6">
             <ul>
               <li className={"mb-2"}>
                 <a href={"/about"} className={"text-xl font-bold"}>About Me</a>
@@ -59,10 +57,10 @@ export default function Navbar() {
                 <a href="mailto:gmmontana@wpi.edu">Email</a>
               </li>
               <li className={"mb-1"}>
-                <a href="https://www.linkedin.com/in/gustave-montana/">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/gustave-montana/" target="_blank">LinkedIn</a>
               </li>
               <li>
-                <a href="https://github.com/gnonk323">GitHub</a>
+                <a href="https://github.com/gnonk323" target="_blank">GitHub</a>
               </li>
             </ul>
           </div>

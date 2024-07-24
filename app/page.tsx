@@ -16,7 +16,7 @@ export default function Home() {
             className={"lg:text-7xl text-xl font-mono"}
           />
         </div>
-        <hr className={"h-px my-6 dark:bg-neutral-700 bg-neutral-300 border-0"}/>
+        <br />
         <div>
           <p className="text-xl">
             I&apos;m a Senior studying Computer Sciecne and Data Science at <a href={"https://www.wpi.edu/academics/departments/computer-science"} target={"_blank"} className={"underline decoration-dotted lg:hover:text-neutral-400 transition-colors cursor-pointer"}>Worcester Polytechnic Institute</a>, with a passion for UI/UX design and front-end development.
@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <hr className={"h-px my-6 dark:bg-neutral-700 bg-neutral-300 border-0"}/>
         <h2 className={"text-lg text-[#007FFF] font-semibold mb-4"}>MY PROJECTS</h2>
-        <div className={"flex lg:flex-row flex-col lg:gap-6 gap-10 mb-12"}>
+        <div className={"flex lg:flex-row flex-col lg:justify-between gap-10 mb-12"}>
           <ProjectCard title={"Hospital Kiosk"}
                        description={"Kiosk Web App for Brigham and Women's Hospital in Boston, MA. Capable of hospital pathfinding and so much more!"}
                        image={"/bwhMOCK.png"} path={"/bwh"}/>
