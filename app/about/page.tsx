@@ -1,5 +1,5 @@
 import { ChatBubbleLeftIcon, AcademicCapIcon } from "@heroicons/react/24/solid";
-import Footer from "@/app/components/Footer";
+import Footer from "@/components/Footer";
 
 export default function About() {
   return (

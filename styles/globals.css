@@ -4,13 +4,13 @@
 
 :root {
   --foreground-rgb: 20, 20, 20;
-  --background-rgb: 229, 229, 229;
+  --background-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 229, 229, 229;
-    --background-rgb: 25, 25, 25;
+    --background-rgb: 23, 23, 23;
   }
 }
 
@@ -34,5 +34,5 @@ li a:hover {
 }
 
 .img-hover-zoom:hover {
-  transform: scale(1.1); /* Zoom in slightly */
+  transform: scale(1.15); /* Zoom in slightly */
 }

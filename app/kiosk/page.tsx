@@ -1,5 +1,5 @@
 import { ExclamationCircleIcon, LightBulbIcon, BoltIcon, RocketLaunchIcon, CodeBracketIcon } from "@heroicons/react/24/solid";
-import Footer from "@/app/components/Footer";
+import Footer from "@/components/Footer";
 
 export default function Kiosk() {
   const technologies: string[] = [
@@ -40,7 +40,7 @@ export default function Kiosk() {
         <div className="flex flex-wrap">
           {technologies.map((tech: string, index: number) => {
             return (
-              <div key={index} className="rounded-full bg-neutral-700 font-semibold text-neutral-200 px-4 py-2 mr-2 mb-2 lg:text-base text-sm">{tech}</div>
+              <div key={index} className="rounded-full dark:bg-neutral-700 bg-neutral-300 font-semibold px-4 py-2 mr-2 mb-2 lg:text-base text-sm">{tech}</div>
             )
           })}
         </div>
@@ -141,18 +141,18 @@ export default function Kiosk() {
           <RocketLaunchIcon className="text-[#007FFF] lg:h-5 lg:w-5 h-4 w-4" />
           <h2 className={"lg:text-lg text-[#007FFF] font-semibold"}>TAKEAWAYS</h2>
         </div>
-        <div className="bg-neutral-800 rounded-md p-4 grid lg:grid-cols-3 grid-cols-1 gap-4 mb-4">
-          <div className="bg-neutral-700 rounded-md p-3">
-            <p className="font-semibold text-neutral-300 mb-1">Full-stack Development</p>
-            <p className="text-sm text-neutral-300">Although I focused on front-end, I spent time interacting with the back-end and I got a lot of valuable experience with creating full-stack features.</p>
+        <div className="dark:bg-neutral-800 bg-neutral-500 rounded-md p-4 grid lg:grid-cols-3 grid-cols-1 gap-4 mb-4">
+          <div className="dark:bg-neutral-700 bg-neutral-300 rounded-md p-3">
+            <p className="font-semibold mb-1">Full-stack Development</p>
+            <p className="text-sm">Although I focused on front-end, I spent time interacting with the back-end and I got a lot of valuable experience with creating full-stack features.</p>
           </div>
-          <div className="bg-neutral-700 rounded-md p-3">
-            <p className="font-semibold text-neutral-300 mb-1">Leadership</p>
-            <p className="text-sm text-neutral-300">I didn&apos;t start out a lead developer, but by the end of the term I had taken a leadership role. Team members came to me with questions, and I was able to develop my leadership skills.</p>
+          <div className="dark:bg-neutral-700 bg-neutral-300 rounded-md p-3">
+            <p className="font-semibold mb-1">Leadership</p>
+            <p className="text-sm">I didn&apos;t start out a lead developer, but by the end of the term I had taken a leadership role. Team members came to me with questions, and I was able to develop my leadership skills.</p>
           </div>
-          <div className="bg-neutral-700 rounded-md p-3">
-            <p className="font-semibold text-neutral-300 mb-1">Agile Development</p>
-            <p className="text-sm text-neutral-300">This was my first time using the Agile methodology for software development, and the fast paced nature of 1-week sprints was overwhelming at times, but effective.</p>
+          <div className="dark:bg-neutral-700 bg-neutral-300 rounded-md p-3">
+            <p className="font-semibold mb-1">Agile Development</p>
+            <p className="text-sm">This was my first time using the Agile methodology for software development, and the fast paced nature of 1-week sprints was overwhelming at times, but effective.</p>
           </div>
         </div>
         <p className="lg:text-base text-sm">

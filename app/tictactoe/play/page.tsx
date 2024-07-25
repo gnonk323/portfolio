@@ -1,6 +1,6 @@
 "use client"
 
-import '@/app/styles/playTictactoe.css';
+import '@/styles/playTictactoe.css';
 import {useCallback, useEffect, useState} from "react";
 import { ChevronLeftIcon } from '@heroicons/react/24/solid';
 

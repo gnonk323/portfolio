@@ -1,3 +1,14 @@
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { Bars3Icon } from "@heroicons/react/24/solid";
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <div>
@@ -9,6 +20,40 @@ export default function Navbar() {
         <div className={"flex items-center gap-4"}>
           <a href="/about" className={"text-sm font-semibold"}>About Me</a>
           <a href="/gustave-montana-resume.pdf" target="_blank" className={"text-sm font-semibold"}>Resume</a>
+          <DropdownMenu>
+            <DropdownMenuTrigger><Bars3Icon className="h-5 w-5" /></DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuLabel>Work</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <Link href={"https://invoicecloud.net/"} target="_blank">
+                <DropdownMenuItem>InvoiceCloud</DropdownMenuItem>
+              </Link>
+              <DropdownMenuSeparator />
+              <DropdownMenuLabel>Projects</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <Link href={"/kiosk"}>
+                <DropdownMenuItem>Hospital Kiosk</DropdownMenuItem>
+              </Link>
+              <Link href={"/dct"}>
+                <DropdownMenuItem>Data Collection Tool</DropdownMenuItem>
+              </Link>
+              <Link href={"/tictactoe"}>
+                <DropdownMenuItem>&apos;Endless&apos; TicTacToe</DropdownMenuItem>
+              </Link>
+              <DropdownMenuSeparator />
+              <DropdownMenuLabel>Contact Me</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <Link href={"mailto:gmmontana@wpi.com"} target="_blank">
+                <DropdownMenuItem>Email</DropdownMenuItem>
+              </Link>
+              <Link href={"https://www.linkedin.com/in/gustave-montana/"} target="_blank">
+                <DropdownMenuItem>LinkedIn</DropdownMenuItem>
+              </Link>
+              <Link href={"https://github.com/gnonk323"} target="_blank">
+                <DropdownMenuItem>GitHub</DropdownMenuItem>
+              </Link>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
       <aside

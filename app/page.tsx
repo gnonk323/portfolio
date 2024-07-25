@@ -1,7 +1,7 @@
 "use client"
 
-import ProjectCard from "@/app/components/ProjectCard";
-import Footer from "@/app/components/Footer";
+import ProjectCard from "@/components/ProjectCard";
+import Footer from "@/components/Footer";
 import { TypeAnimation } from "react-type-animation";
 import { ComputerDesktopIcon } from "@heroicons/react/24/solid";
 

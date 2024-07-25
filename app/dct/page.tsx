@@ -1,5 +1,5 @@
 import { ExclamationCircleIcon, XCircleIcon, PuzzlePieceIcon, MagnifyingGlassIcon, LightBulbIcon } from "@heroicons/react/24/solid";
-import Footer from "@/app/components/Footer";
+import Footer from "@/components/Footer";
 
 export default function DCT() {
   return (
