@@ -45,7 +45,7 @@ export default function Navbar() {
                 <a href={"/dct"}>Data Collection Tool</a>
               </li>
               <li>
-                <a href="/tictactoe">No-Tie TicTacToe</a>
+                <a href="/tictactoe">&apos;Endless&apos; TicTacToe</a>
               </li>
             </ul>
           </div>

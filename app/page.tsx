@@ -3,6 +3,7 @@
 import ProjectCard from "@/app/components/ProjectCard";
 import Footer from "@/app/components/Footer";
 import { TypeAnimation } from "react-type-animation";
+import { ComputerDesktopIcon } from "@heroicons/react/24/solid";
 
 export default function Home() {
   return (
@@ -23,7 +24,10 @@ export default function Home() {
           </p>
         </div>
         <hr className={"h-px my-6 dark:bg-neutral-700 bg-neutral-300 border-0"}/>
-        <h2 className={"text-lg text-[#007FFF] font-semibold mb-4"}>MY PROJECTS</h2>
+        <div className="flex items-center mb-4 gap-2">
+          <ComputerDesktopIcon className="text-[#007FFF] h-5 w-5" />
+          <h2 className={"text-lg text-[#007FFF] font-semibold"}>MY PROJECTS</h2>
+        </div>
         <div className={"flex lg:flex-row flex-col lg:justify-between gap-10 mb-12"}>
           <ProjectCard title={"Hospital Kiosk"}
                        description={"Kiosk Web App for Brigham and Women's Hospital in Boston, MA. Capable of hospital pathfinding and so much more!"}
