@@ -19,7 +19,7 @@ export default function Kiosk() {
   ]
   return (
     <div className="min-h-screen">
-      <div className={"lg:ml-64 lg:py-10 lg:px-48 p-6 min-h-screen"}>
+      <div className={"lg:ml-64 lg:mt-0 mt-24 lg:py-10 lg:px-48 p-6 min-h-screen"}>
         <div className="lg:flex lg:flex-row block justify-between items-center">
           <div className="lg:mb-0 mb-2">
             <h1 className="lg:text-5xl text-4xl font-semibold">Hospital Kiosk App</h1>
@@ -141,7 +141,7 @@ export default function Kiosk() {
           <RocketLaunchIcon className="text-[#007FFF] lg:h-5 lg:w-5 h-4 w-4" />
           <h2 className={"lg:text-lg text-[#007FFF] font-semibold"}>TAKEAWAYS</h2>
         </div>
-        <div className="dark:bg-neutral-800 bg-neutral-500 rounded-md p-4 grid lg:grid-cols-3 grid-cols-1 gap-4 mb-4">
+        <div className="dark:bg-neutral-800 bg-neutral-400 rounded-md p-4 grid lg:grid-cols-3 grid-cols-1 gap-4 mb-4">
           <div className="dark:bg-neutral-700 bg-neutral-300 rounded-md p-3">
             <p className="font-semibold mb-1">Full-stack Development</p>
             <p className="text-sm">Although I focused on front-end, I spent time interacting with the back-end and I got a lot of valuable experience with creating full-stack features.</p>

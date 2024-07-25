@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <div>
       <div
-        className={"lg:hidden flex flex-row justify-between w-screen top-0 p-6 border-b dark:border-neutral-700 border-neutral-300"}>
+        className={"z-[49] lg:hidden h-24 flex flex-row justify-between w-screen fixed top-0 py-5 px-6 border-b dark:bg-neutral-900 bg-white dark:border-neutral-700 border-neutral-300"}>
         <a href={"/"}>
           <h1 className={"text-xl font-extrabold text-[#007FFF]"}>Gustave<br/>Montana</h1>
         </a>

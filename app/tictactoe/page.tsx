@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 export default function TicTacToe() {
   return (
     <div className="min-h-screen">
-      <div className="lg:ml-64 lg:py-10 lg:px-48 p-6 min-h-screen">
+      <div className="lg:ml-64 lg:py-10 lg:px-48 lg:mt-0 mt-24 p-6 min-h-screen">
         <div className="lg:flex lg:flex-row block justify-between items-center">
           <div className="lg:mb-0 mb-2">
             <h1 className="lg:text-5xl text-3xl font-semibold">&apos;Endless&apos; TicTacToe</h1>

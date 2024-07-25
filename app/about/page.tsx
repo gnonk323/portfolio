@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 export default function About() {
   return (
     <main className="min-h-screen">
-      <div className={"lg:ml-64 lg:py-10 lg:px-24 p-6 min-h-screen"}>
+      <div className={"lg:ml-64 lg:py-10 lg:px-24 lg:mt-0 mt-24 p-6 min-h-screen"}>
         <div className="flex items-center">
           <div>
             <div className="flex gap-2 items-center mb-4">

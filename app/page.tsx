@@ -8,7 +8,7 @@ import { ComputerDesktopIcon } from "@heroicons/react/24/solid";
 export default function Home() {
   return (
     <main>
-      <div className={"lg:ml-64 lg:p-10 p-6 min-h-screen"}>
+      <div className={"lg:ml-64 lg:p-10 lg:mt-0 mt-24 p-6 min-h-screen"}>
         <div>
           <TypeAnimation
             sequence={["Hi, I'm Gustave Montana!"]}

@@ -117,7 +117,7 @@ export default function Play() {
 
   return (
     <div>
-      <div className='lg:hidden p-4'>
+      <div className='lg:hidden p-4 mt-24'>
         <h1 className='text-center'>This doesn&apos;t work on mobile :(</h1>
       </div>
       <div className='lg:block hidden'>
