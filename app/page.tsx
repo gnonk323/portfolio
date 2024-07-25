@@ -28,7 +28,7 @@ export default function Home() {
           <ComputerDesktopIcon className="text-[#007FFF] h-5 w-5" />
           <h2 className={"text-lg text-[#007FFF] font-semibold"}>MY PROJECTS</h2>
         </div>
-        <div className={"flex lg:flex-row flex-col lg:justify-between gap-10 mb-12"}>
+        <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-6 gap-10">
           <ProjectCard title={"Hospital Kiosk"}
                        description={"Kiosk Web App for Brigham and Women's Hospital in Boston, MA. Capable of hospital pathfinding and so much more!"}
                        image={"/images/bwhMOCK.png"} path={"/kiosk"}/>
@@ -39,6 +39,7 @@ export default function Home() {
                        description={"Each player is only allowed have 3 X's or O's on the board at once, making it impossible for the game to end in a tie!"}
                        image={"/images/tictactoeMOCK.png"} path={"/tictactoe"}/>
         </div>
+        <br />
         <Footer/>
       </div>
     </main>
