@@ -1,5 +1,6 @@
 import { ChatBubbleLeftIcon, AcademicCapIcon } from "@heroicons/react/24/solid";
 import Footer from "@/components/Footer";
+import SectionHeader from "@/components/SectionHeader";
 
 export default function About() {
   return (
@@ -7,10 +8,7 @@ export default function About() {
       <div className={"lg:ml-64 lg:py-10 lg:px-24 lg:mt-0 mt-24 p-6 min-h-screen"}>
         <div className="flex items-center">
           <div>
-            <div className="flex gap-2 items-center mb-4">
-              <ChatBubbleLeftIcon className="h-5 w-5 text-[#007FFF]" />
-              <h2 className={"text-lg text-[#007FFF] font-semibold"}>ABOUT ME</h2>
-            </div>
+            <SectionHeader icon={<ChatBubbleLeftIcon />}>ABOUT ME</SectionHeader>
             <p className={"lg:text-2xl text-lg"}>
               I am a Computer Science student at Worcester Polytechnic Institute, graduating in the Spring of 2025, and
               looking to start my career in software engineering.
@@ -40,10 +38,7 @@ export default function About() {
         <div className="flex justify-between h-full lg:mb-12">
           <img src="/images/BoyntonHall.jpg" alt="WPI Campus" className="w-1/2 object-cover rounded-md mr-16 hidden lg:block" />
           <div className="flex flex-col lg:w-1/2 lg:justify-between lg:gap-0 gap-5">
-            <div className="flex gap-2 items-center">
-              <AcademicCapIcon className="h-5 w-5 text-[#007FFF]" />
-              <h2 className={"text-lg text-[#007FFF] font-semibold"}>EDUCATION</h2>
-            </div>
+            <SectionHeader icon={<AcademicCapIcon />}>EDUCATION</SectionHeader>
             <div>
               <h3 className="lg:text-3xl text-2xl font-semibold mb-4">Worcester Polytechnic Institute</h3>
               <p className="lg:text-2xl text-xl"><span className="lg:text-lg text-base text-[#007FFF] font-black mr-3">MAJOR</span>Computer Science</p>

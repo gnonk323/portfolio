@@ -1,5 +1,7 @@
 import { ExclamationCircleIcon, LightBulbIcon, BoltIcon, RocketLaunchIcon, CodeBracketIcon } from "@heroicons/react/24/solid";
 import Footer from "@/components/Footer";
+import NextProject from "@/components/NextProject";
+import SectionHeader from "@/components/SectionHeader";
 
 export default function Kiosk() {
   const technologies: string[] = [
@@ -33,10 +35,7 @@ export default function Kiosk() {
         </div>
         <img src="/images/bwhMOCK.png" alt="" className="max-w-[80%] mx-auto" />
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
-        <div className="flex items-center mb-4 gap-2">
-          <CodeBracketIcon className="text-[#007FFF] lg:h-5 lg:w-5 h-4 w-4" />
-          <h2 className={"lg:text-lg text-[#007FFF] font-semibold"}>TECHNOLOGY STACK</h2>
-        </div>
+        <SectionHeader icon={<CodeBracketIcon />}>TECHNOLOGY STACK</SectionHeader>
         <div className="flex flex-wrap">
           {technologies.map((tech: string, index: number) => {
             return (
@@ -45,18 +44,12 @@ export default function Kiosk() {
           })}
         </div>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
-        <div className="flex items-center mb-4 gap-2">
-          <ExclamationCircleIcon className="text-[#007FFF] lg:h-5 lg:w-5 h-4 w-4" />
-          <h2 className={"lg:text-lg text-[#007FFF] font-semibold"}>BACKGROUND</h2>
-        </div>
+        <SectionHeader icon={<ExclamationCircleIcon />}>BACKGROUND</SectionHeader>
         <p className="lg:text-base text-sm">
         This project was developed during the Software Engineering course (CS3733) at WPI taught by Professor Wilson Wong, in collaboration with Brigham and Women&apos;s Hospital in Boston, MA. Software Engineering is a rigorous 7-week course, during which development teams of 10 students meet week-to-week application requirements, presenting their progress each week, resulting in a finished hospital kiosk application by term&apos;s end. Students take on various roles, such as Product Owner, Project Manager, Scrum Master, and more. The goal of the course is to provide students with as close to real-world development experience as possible. At the end of the term, our final presentations were watched by representatives from BWH, to take ideas in UI/UX design, functionality, and features.
         </p>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
-        <div className="flex items-center mb-4 gap-2">
-          <LightBulbIcon className="text-[#007FFF] lg:h-5 lg:w-5 h-4 w-4" />
-          <h2 className={"lg:text-lg text-[#007FFF] font-semibold"}>APPROACH</h2>
-        </div>
+        <SectionHeader icon={<LightBulbIcon />}>APPROACH</SectionHeader>
         <p className="lg:text-base text-sm">
           Each team used the Agile software development approach, with weekly sprints. Upon receiving the application requirements for the week, our team met to convert the requirements into epics, which were then broken down into user stories. We used planning poker to weight each story, breaking them down into sub-tasks if necessary. The team met daily for a scrum meeting, led by our scrum master. The team was loosely broken up into front-end, back-end, and algorithms developers, where over time I became one of the lead engineers for the front-end team. At the end of each sprint, we held a retrospective meeting where we discussed what went well, what went wrong, what we could have done better, and gave shout-outs to team members that went the extra mile.
         </p>
@@ -84,10 +77,7 @@ export default function Kiosk() {
           </div>
         </div>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
-        <div className="flex items-center mb-4 gap-2">
-          <BoltIcon className="text-[#007FFF] lg:h-5 lg:w-5 h-4 w-4" />
-          <h2 className={"lg:text-lg text-[#007FFF] font-semibold"}>FEATURES</h2>
-        </div>
+        <SectionHeader icon={<BoltIcon />}>FEATURES</SectionHeader>
         <div className="flex items-center">
           <span className="flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#007FFF] text-[#007FFF] font-bold lg:text-base text-sm">1</span>
           <p className="text-[#007FFF] font-semibold lg:text-lg ml-2">Hospital Pathfinding</p>
@@ -137,10 +127,7 @@ export default function Kiosk() {
           </p>
         </div>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
-        <div className="flex items-center mb-4 gap-2">
-          <RocketLaunchIcon className="text-[#007FFF] lg:h-5 lg:w-5 h-4 w-4" />
-          <h2 className={"lg:text-lg text-[#007FFF] font-semibold"}>TAKEAWAYS</h2>
-        </div>
+        <SectionHeader icon={<RocketLaunchIcon />}>TAKEAWAYS</SectionHeader>
         <div className="dark:bg-neutral-800 bg-neutral-400 rounded-md p-4 grid lg:grid-cols-3 grid-cols-1 gap-4 mb-4">
           <div className="dark:bg-neutral-700 bg-neutral-300 rounded-md p-3">
             <p className="font-semibold mb-1">Full-stack Development</p>
@@ -160,17 +147,7 @@ export default function Kiosk() {
         </p>
         <br />
         <br />
-        <a href="/dct">
-          <div className="flex justify-between bg-[#007FFF] rounded-md p-4 hover:bg-[#0065CC] cursor-pointer transition-colors lg:text-base text-sm items-center group">
-            <p className="text-neutral-200 font-semibold">Next Project: Data Collection Tool</p>
-            <div className="flex items-center text-neutral-200 transform transition-transform duration-300 group-hover:translate-x-1">
-              <p className="text-sm">Read More</p>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
-          </div>
-        </a>
+        <NextProject path="/dct" title="Data Collection Tool" />
         <br />
         <Footer />
       </div>
