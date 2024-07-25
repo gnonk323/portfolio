@@ -23,7 +23,7 @@ export default function Kiosk() {
         <div className="lg:flex lg:flex-row block justify-between items-center">
           <div className="lg:mb-0 mb-2">
             <h1 className="lg:text-5xl text-4xl font-semibold">Hospital Kiosk App</h1>
-            <h2 className="lg:text-xl text-neutral-400">For Mass General Brigham and Women&apos;s Hospital</h2>
+            <h2 className="lg:text-xl text-sm text-neutral-400">For Mass General Brigham and Women&apos;s Hospital</h2>
           </div>
           <div className="flex gap-3 lg:text-base text-sm">
             <a href="/bwh-report.pdf" target="_blank" className="hover:text-neutral-400 transition-colors">Report</a>
