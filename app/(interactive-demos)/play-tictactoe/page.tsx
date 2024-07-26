@@ -123,7 +123,7 @@ export default function Play() {
       <div className='lg:block hidden'>
         <div className={"page-container"}>
           <div className={"title mt-8"}>
-            <a href="/tictactoe" className='absolute top-0 left-0 ml-72 mt-8 p-2 rounded-md border hover:bg-neutral-300 hover:bg-opacity-15 transition-colors'>
+            <a href="/tictactoe" className='absolute top-0 left-0 ml-8 mt-8 p-2 rounded-md border hover:bg-neutral-300 hover:bg-opacity-15 transition-colors'>
               <ChevronLeftIcon className='h-8 w-8' />
             </a>
             <p><em>endless</em></p>
