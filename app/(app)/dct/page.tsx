@@ -1,4 +1,4 @@
-import { ExclamationCircleIcon, XCircleIcon, PuzzlePieceIcon, MagnifyingGlassIcon, LightBulbIcon } from "@heroicons/react/24/solid";
+import { ExclamationCircleIcon, MagnifyingGlassIcon, LightBulbIcon, KeyIcon, BoltIcon, EyeIcon, BeakerIcon } from "@heroicons/react/24/solid";
 import Footer from "@/components/Footer";
 import NextProject from "@/components/NextProject";
 import SectionHeader from "@/components/SectionHeader";
@@ -7,13 +7,18 @@ export default function DCT() {
   return (
     <div className="min-h-screen">
       <div className="lg:ml-64 lg:py-10 lg:px-48 lg:mt-0 mt-24 p-6 min-h-screen">
-        <h1 className="lg:text-5xl text-3xl font-semibold">Data Collection Tool</h1>
-        <h2 className="lg:text-xl text-sm text-neutral-400">Everything a WPI student needs for their IQP research, all in one place</h2>
+        <div className="flex justify-between items-center">
+          <div>
+            <h1 className="lg:text-5xl text-3xl font-semibold">Data Collection Tool</h1>
+            <h2 className="lg:text-xl text-sm text-neutral-400">Everything a WPI student needs for their IQP research, all in one place</h2>
+          </div>
+          <a href="https://digital.wpi.edu/concern/student_works/m613n290d?locale=en" target="_blank" className="hover:underline">Report</a>
+        </div>
         <img src="/images/mqpMOCK.png" alt="" className="max-w-[80%] mx-auto" />
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
-        <SectionHeader icon={<ExclamationCircleIcon />}>BACKGROUND</SectionHeader>
+        {/* <SectionHeader icon={<ExclamationCircleIcon />}>BACKGROUND</SectionHeader> */}
         <p className="lg:text-base text-sm">
-          This project is my capstone, or <a className="text-[#007FFF] font-semibold hover:text-[#0065CC] cursor-pointer transition-colors" href="https://www.wpi.edu/project-based-learning/project-based-education/major-qualifying-project">Major Qualifying Project (MQP)</a> for my Computer Science BS degree. It is being developed during the summer of 2024, into the first term of the fall semester. I am working on a team of 5, using the Agile methodology for software development.
+          This project is my capstone, or <a className="text-[#007FFF] font-semibold hover:text-[#0065CC] cursor-pointer transition-colors" href="https://www.wpi.edu/project-based-learning/project-based-education/major-qualifying-project">Major Qualifying Project (MQP)</a> for my Computer Science BS degree. It was developed during the summer of 2024, into the first term of the fall semester. I worked on a team of 5, using the Agile methodology for software development.
         </p>
         <div className="rounded-md dark:bg-neutral-700 bg-neutral-300 lg:p-4 p-2 lg:my-12 my-6">
           <svg className="w-8 mb-2 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -27,16 +32,28 @@ export default function DCT() {
             <svg className="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z" fill="#007FFF"/></svg>
           </div>
         </div>
+        <div className="grid grid-cols-3 text-center">
+          <div>
+            <p className="font-extrabold text-5xl">1,200</p>
+            <p className="font-light text-sm">Students per year</p>
+          </div>
+          <div>
+            <p className="font-extrabold text-5xl">50+</p>
+            <p className="font-light text-sm">Global project centers</p>
+          </div>
+          <div>
+            <p className="font-extrabold text-5xl">31</p>
+            <p className="font-light text-sm">Countries</p>
+          </div>
+        </div>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
-        <SectionHeader icon={<XCircleIcon />}>THE PROBLEM</SectionHeader>
+        <SectionHeader icon={<ExclamationCircleIcon />}>BACKGROUND</SectionHeader>
         <p className="lg:text-base text-sm">
           The IQP is a research project, and so it requires students to collect qualitative and quantitative data, conduct interviews, and distribute surveys to complete their reports. However, each project varies greatly, in terms of geographical location, subject matter, objective, and of course, research methods. During my IQP in Monteverde, Costa Rica, my group used an array of softwares and websites to conduct our research. This proved complicated and frustrating at times.
         </p>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
-        <SectionHeader icon={<PuzzlePieceIcon />}>THE SOLUTION</SectionHeader>
-        <p className="lg:text-base text-sm">
-          To solve this problem, my group set out to create an app versatile enough to consolidate most, if not all, of any IQP group&apos;s research needs into one application. Students will be able to log in, create or join a team, and collaboratively conduct their research. The app&apos;s features will include the ability to create custom, reusable data collection structures which we call forms, a suite of interview tools which includes built in recording and AI transcription and summarization, the ability to geotag data collection entries and view them on a map, and an offline mode where entries can be cached locally until internet connection is available. 
-        </p>
+        <SectionHeader icon={<KeyIcon />}>PROJECT GOAL</SectionHeader>
+        <p className="md:text-3xl font-semibold">Design and build an app versatile enough to consolidate most, if not all, of any IQP group&apos;s research needs into one application.</p>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <SectionHeader icon={<MagnifyingGlassIcon />}>UX RESEARCH</SectionHeader>
         <p className="lg:text-base text-sm">
@@ -59,17 +76,63 @@ export default function DCT() {
         <p className="lg:text-base text-sm">
           We also researched other existing data collection apps, to see what features they had and didn&apos;t have. We found that existing apps lacked features important to IQP students, while having extraneous features geared towards other types of users.
         </p>
-        <p className="font-black text-center text-[#007FFF] lg:my-8 my-4 lg:text-2xl text-lg">Our app will be designed specifically for the WPI IQP experience!</p>
+        <p className="font-black text-center text-[#007FFF] lg:my-8 my-4 lg:text-2xl text-lg">Our app is designed specifically for the WPI IQP experience!</p>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <SectionHeader icon={<LightBulbIcon />}>APPROACH</SectionHeader>
         <p className="lg:text-base text-sm">
-          We are using the Agile methodology, with 2-week sprints. We meet every other day for scrum due to group availability during the summer, in addition to a weekly meeting with our project advisor where we present our progress, ask any questions, and receive important guidance.
+          We used the Agile methodology, with 2-week sprints. We met every other day for scrum due to group availability during the summer, in addition to a weekly meeting with our project advisor where we presented our progress, asked any questions, and received important guidance.
         </p>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
-        <div className="rounded-md bg-red-400 bg-opacity-35 p-4 border border-red-400">
-          <h3 className="font-semibold lg:text-base text-sm">This project is still under construction. If it sounds interesting to you, please reach out and we can talk about it in more detail!</h3>
+        <SectionHeader icon={<BoltIcon />}>FEATURES</SectionHeader>
+        <p>Students can log in, create or join a group, and collabortively conduct their research. Each group is generated with a random access code which students need to join a group.</p>
+        <div className="grid grid-cols-2 grid-rows-2 mt-4 gap-2">
+          <p className="rounded-md dark:bg-neutral-800 bg-neutral-300 p-4">Create custom reusable data structures called forms for data and interview collection.</p>
+          <p className="rounded-md dark:bg-neutral-800 bg-neutral-300 p-4">A suite of interview tools which includes built-in recording and AI transcription and summarization.</p>
+          <p className="rounded-md dark:bg-neutral-800 bg-neutral-300 p-4">The ability to geotag your data collection entries and view them on the map page.</p>
+          <p className="rounded-md dark:bg-neutral-800 bg-neutral-300 p-4">An offline mode where entries can be cached locally until internet connection is available.</p>
         </div>
+        <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
+        <SectionHeader icon={<EyeIcon />}>DESIGN</SectionHeader>
+        <h2 className="font-semibold mb-1">Create DCT</h2>
+        <video autoPlay loop muted playsInline className="rounded-md">
+          <source src="/images/dct/create-account.mp4" />
+        </video>
+        <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">Once logged in, if a user is not already in a project they can join one or create a new one.</p>
         <br />
+        <h2 className="font-semibold mb-1">Create Form</h2>
+        <video autoPlay loop muted playsInline className="rounded-md">
+          <source src="/images/dct/create-form.mp4" />
+        </video>
+        <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">A form is a reusable data structure. They are usable by anyone in the project and are the main method of data collection.</p>
+        <br />
+        <h2 className="font-semibold mb-1">Geotagged Entries</h2>
+        <video autoPlay loop muted playsInline className="rounded-md">
+          <source src="/images/dct/map-page.mp4" />
+        </video>
+        <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">Every entry can be geotagged with the user's current location or a custom location. Entries can be viewed on the map.</p>
+        <br />
+        <div className="grid grid-cols-2 grid-rows-2 gap-4">
+          <div>
+            <h2 className="font-semibold mb-1">Manage Team</h2>
+            <img src="/images/dct/manage-team.png" alt="Manage Team Page" className="rounded-md" />
+          </div>
+          <div>
+            <h2 className="font-semibold mb-1">Project Overview</h2>
+            <img src="/images/dct/project-overview.png" alt="Project Overview Page" className="rounded-md" />
+          </div>
+          <div>
+            <h2 className="font-semibold mb-1">Dashboard</h2>
+            <img src="/images/dct/dashboard.png" alt="Dashboard" className="rounded-md" />
+          </div>
+          <div>
+            <h2 className="font-semibold mb-1">Help Modal</h2>
+            <img src="/images/dct/help-modal.png" alt="Help Modal" className="rounded-md" />
+          </div>
+        </div>
+        <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
+        {/* <div className="rounded-md bg-red-400 bg-opacity-35 p-4 border border-red-400">
+          <h3 className="font-semibold lg:text-base text-sm">This project is still under construction. If it sounds interesting to you, please reach out and we can talk about it in more detail!</h3>
+        </div> */}
         <NextProject path="/tictactoe" title="'Endless' TicTacToe" />
         <br />
         <Footer />
