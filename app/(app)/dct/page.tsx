@@ -109,7 +109,7 @@ export default function DCT() {
         <video autoPlay loop muted playsInline className="rounded-md">
           <source src="/images/dct/map-page.mp4" />
         </video>
-        <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">Every entry can be geotagged with the user's current location or a custom location. Entries can be viewed on the map.</p>
+        <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">Every entry can be geotagged with the user&apos;s current location or a custom location. Entries can be viewed on the map.</p>
         <br />
         <div className="grid grid-cols-2 grid-rows-2 gap-4">
           <div>
