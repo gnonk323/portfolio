@@ -34,16 +34,16 @@ export default function DCT() {
         </div>
         <div className="grid grid-cols-3 text-center">
           <div>
-            <p className="font-extrabold text-5xl">1,200</p>
-            <p className="font-light text-sm">Students per year</p>
+            <p className="font-extrabold text-3xl md:text-5xl">1,200</p>
+            <p className="font-light text-xs md:text-sm">Students per year</p>
           </div>
           <div>
-            <p className="font-extrabold text-5xl">50+</p>
-            <p className="font-light text-sm">Global project centers</p>
+            <p className="font-extrabold text-3xl md:text-5xl">50+</p>
+            <p className="font-light text-xs md:text-sm">Global project centers</p>
           </div>
           <div>
-            <p className="font-extrabold text-5xl">31</p>
-            <p className="font-light text-sm">Countries</p>
+            <p className="font-extrabold text-3xl md:text-5xl">31</p>
+            <p className="font-light text-xs md:text-sm">Countries</p>
           </div>
         </div>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
