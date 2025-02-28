@@ -34,5 +34,5 @@ li a:hover {
 }
 
 .img-hover-zoom:hover {
-  transform: scale(1.15); /* Zoom in slightly */
+  transform: scale(1.05); /* Zoom in slightly */
 }

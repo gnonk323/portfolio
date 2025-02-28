@@ -20,7 +20,7 @@ export default function DCT() {
         <p className="lg:text-base text-sm">
           This project is my capstone, or <a className="text-[#007FFF] font-semibold hover:text-[#0065CC] cursor-pointer transition-colors" href="https://www.wpi.edu/project-based-learning/project-based-education/major-qualifying-project">Major Qualifying Project (MQP)</a> for my Computer Science BS degree. It was developed during the summer of 2024, into the first term of the fall semester. I worked on a team of 5, using the Agile methodology for software development.
         </p>
-        <div className="rounded-md dark:bg-neutral-700 bg-neutral-300 lg:p-4 p-2 lg:my-12 my-6">
+        <div className="rounded-md dark:bg-neutral-700 bg-neutral-200 lg:p-4 p-2 lg:my-12 my-6">
           <svg className="w-8 mb-2 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" fill="#007FFF"/>
           </svg>
@@ -59,16 +59,16 @@ export default function DCT() {
         <p className="lg:text-base text-sm">
           Before jumping into writing code, we had to conduct some research of our own. As a group, we reviewed 20 previous IQP reports to quantify which research methods were most commonly used, so we would be able to focus our app on the best areas. To minimize error, we peer reviewed each other&apos;s work to ensure accuracy of our findings.
         </p>
-        <div className="dark:bg-neutral-800 bg-neutral-400 rounded-md lg:my-8 my-4 p-4 grid lg:grid-cols-3 grid-cols-1 gap-4 mb-4">
-          <div className="dark:bg-neutral-700 bg-neutral-300 rounded-md p-3">
+        <div className="lg:my-8 my-4 p-4 grid lg:grid-cols-3 grid-cols-1 gap-4 mb-4">
+          <div className="dark:bg-neutral-700 bg-neutral-200 rounded-md p-3">
             <p className="text-center font-semibold mb-1">Interviews</p>
             <p className="text-6xl text-center text-[#007FFF] font-bold">95%</p>
           </div>
-          <div className="dark:bg-neutral-700 bg-neutral-300 rounded-md p-3">
+          <div className="dark:bg-neutral-700 bg-neutral-200 rounded-md p-3">
             <p className="text-center font-semibold mb-1">Qualitative Data</p>
             <p className="text-6xl text-center text-[#007FFF] font-bold">95%</p>
           </div>
-          <div className="dark:bg-neutral-700 bg-neutral-300 rounded-md p-3">
+          <div className="dark:bg-neutral-700 bg-neutral-200 rounded-md p-3">
             <p className="text-center font-semibold mb-1">Quantitative Data</p>
             <p className="text-6xl text-center text-[#007FFF] font-bold">55%</p>
           </div>
@@ -86,10 +86,10 @@ export default function DCT() {
         <SectionHeader icon={<BoltIcon />}>FEATURES</SectionHeader>
         <p>Students can log in, create or join a group, and collabortively conduct their research. Each group is generated with a random access code which students need to join a group.</p>
         <div className="grid grid-cols-2 grid-rows-2 mt-4 gap-2">
-          <p className="rounded-md dark:bg-neutral-800 bg-neutral-300 p-4">Create custom reusable data structures called forms for data and interview collection.</p>
-          <p className="rounded-md dark:bg-neutral-800 bg-neutral-300 p-4">A suite of interview tools which includes built-in recording and AI transcription and summarization.</p>
-          <p className="rounded-md dark:bg-neutral-800 bg-neutral-300 p-4">The ability to geotag your data collection entries and view them on the map page.</p>
-          <p className="rounded-md dark:bg-neutral-800 bg-neutral-300 p-4">An offline mode where entries can be cached locally until internet connection is available.</p>
+          <p className="rounded-md dark:bg-neutral-800 bg-neutral-200 p-4">Create custom reusable data structures called forms for data and interview collection.</p>
+          <p className="rounded-md dark:bg-neutral-800 bg-neutral-200 p-4">A suite of interview tools which includes built-in recording and AI transcription and summarization.</p>
+          <p className="rounded-md dark:bg-neutral-800 bg-neutral-200 p-4">The ability to geotag your data collection entries and view them on the map page.</p>
+          <p className="rounded-md dark:bg-neutral-800 bg-neutral-200 p-4">An offline mode where entries can be cached locally until internet connection is available.</p>
         </div>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <SectionHeader icon={<EyeIcon />}>DESIGN</SectionHeader>
