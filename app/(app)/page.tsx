@@ -26,7 +26,7 @@ export default function Home() {
         </div>
         <hr className={"h-px my-6 dark:bg-neutral-700 bg-neutral-300 border-0"}/>
         <SectionHeader icon={<ComputerDesktopIcon />}>MY PROJECTS</SectionHeader>
-        <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-6 gap-10">
+        <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-6 gap-10">
           <ProjectCard title={"Hospital Kiosk"}
                        description={"Kiosk Web App for Brigham and Women's Hospital in Boston, MA. Capable of hospital pathfinding and so much more!"}
                        image={"/images/bwhMOCK.png"} path={"/kiosk"}/>

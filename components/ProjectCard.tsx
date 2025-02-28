@@ -7,14 +7,21 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ title, description, image, path }: ProjectCardProps) {
   return (
-    <div>
-      <div className={"mb-3"}>
-        <h1 className={"text-2xl font-bold mb-2"}>{title}</h1>
-        <p className={"text-sm h-16"}>{description}</p>
+    <a href={path}>
+      <div className="bg-neutral-200 dark:bg-neutral-800 rounded-md p-8 hover:scale-95 transition-all">
+        <div>
+          <h1 className="text-2xl font-bold mb-2">{title}</h1>
+          <p className="text-sm">{description}</p>
+        </div>
+        <div className="overflow-hidden rounded-md">
+          <img
+            src={image}
+            alt={title}
+            height="315"
+            className="max-w-full mx-auto rounded-md transition-transform duration-300"
+          />
+        </div>
       </div>
-      <a href={path}>
-        <img src={image} alt={title} height={"315"} className={"max-w-full mx-auto rounded-md img-hover-zoom"}/>
-      </a>
-    </div>
+    </a>
   );
 }

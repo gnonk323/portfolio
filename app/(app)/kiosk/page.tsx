@@ -28,9 +28,9 @@ export default function Kiosk() {
             <h2 className="lg:text-xl text-sm text-neutral-400">For Mass General Brigham and Women&apos;s Hospital</h2>
           </div>
           <div className="flex gap-3 lg:text-base text-sm">
-            <a href="/bwh-report.pdf" target="_blank" className="hover:text-neutral-400 transition-colors">Report</a>
+            <a href="/bwh-report.pdf" target="_blank" className="hover:underline">Report</a>
             <p>|</p>
-            <a href="/bwh-user-manual.pdf" target="_blank" className="hover:text-neutral-400 transition-colors">User Manual</a>
+            <a href="/bwh-user-manual.pdf" target="_blank" className="hover:underline">User Manual</a>
           </div>
         </div>
         <img src="/images/bwhMOCK.png" alt="" className="max-w-[80%] mx-auto" />
