@@ -131,7 +131,7 @@ export default function Consensus() {
           })}
         </div>
         <p className="lg:text-base text-sm mt-8">
-          Consensus is a game where every day there are 4 words that fit into a common category. You rank them in order of your opinion on "best" to "worst" and once you submit your ranking, you can see how it comapres to the calculated average ranking, or the "consensus".
+          Consensus is a game where every day there are 4 words that fit into a common category. You rank them in order of your opinion on &quot;best&quot; to &quot;worst&quot; and once you submit your ranking, you can see how it comapres to the calculated average ranking, or the &quot;consensus&quot;.
         </p>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <p className="p-4 rounded-md border border-green-500 bg-green-500/15 mb-12 lg:text-base text-sm">
