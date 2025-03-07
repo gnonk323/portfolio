@@ -9,7 +9,7 @@ export default function TicTacToe() {
             <h1 className="lg:text-5xl text-3xl font-semibold">&apos;Endless&apos; TicTacToe</h1>
             <h2 className="lg:text-xl text-sm text-neutral-400">The game never ends in a tie!</h2>
           </div>
-          <a href="/play-tictactoe" className="rounded-md py-2 px-4 bg-[#007FFF] hover:bg-[#0065CC] cursor-pointer transition-colors text-neutral-200 hidden lg:block">Play Now!</a>
+          <a href="/play-tictactoe" className="rounded-md py-2 px-4 bg-[#0065CC] cursor-pointer transition-all text-neutral-200 hidden lg:block hover:scale-105">Play Now!</a>
         </div>
         <img src="/images/tictactoeMOCK.png" alt="tic tac toe" className="max-w-[80%] mx-auto" />
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />

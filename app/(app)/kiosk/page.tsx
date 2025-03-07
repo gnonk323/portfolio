@@ -39,7 +39,7 @@ export default function Kiosk() {
         <div className="flex flex-wrap">
           {technologies.map((tech: string, index: number) => {
             return (
-              <div key={index} className="rounded-full dark:bg-neutral-700 bg-neutral-300 font-semibold px-4 py-2 mr-2 mb-2 lg:text-base text-sm">{tech}</div>
+              <div key={index} className="border border-neutral-600 rounded-full dark:bg-neutral-700 bg-neutral-300 font-semibold px-4 py-2 mr-2 mb-2 lg:text-base text-sm">{tech}</div>
             )
           })}
         </div>
