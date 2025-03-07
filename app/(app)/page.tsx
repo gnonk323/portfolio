@@ -33,6 +33,9 @@ export default function Home() {
           <ProjectCard title={"Data Collection Tool"}
                        description={"An app for collecting various types of data in a team, designed for WPI's own IQP study abroad program."}
                        image={"/images/mqpMOCK.png"} path={"/dct"}/>
+          <ProjectCard title={"Consensus"}
+                       description={"Rank 4 choices and see how you compare to the consensus."}
+                       image={"/images/consensusMOCK.png"} path={"/consensus"}/>
           <ProjectCard title={"'Endless' TicTacToe"}
                        description={"Each player is only allowed have 3 X's or O's on the board at once, making it impossible for the game to end in a tie!"}
                        image={"/images/tictactoeMOCK.png"} path={"/tictactoe"}/>

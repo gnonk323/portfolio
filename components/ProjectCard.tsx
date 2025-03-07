@@ -11,7 +11,7 @@ export default function ProjectCard({ title, description, image, path }: Project
       <div className="bg-neutral-200 dark:bg-neutral-800 rounded-md p-8 hover:scale-95 transition-all">
         <div>
           <h1 className="text-2xl font-bold mb-2">{title}</h1>
-          <p className="text-sm">{description}</p>
+          <p className="text-sm min-h-14">{description}</p>
         </div>
         <div className="overflow-hidden rounded-md">
           <img
