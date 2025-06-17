@@ -78,7 +78,7 @@ export default function Consensus() {
         <div className="flex justify-between items-center">
           <div>
             <h1 className="lg:text-5xl text-3xl font-semibold">Consensus</h1>
-            <h2 className="lg:text-xl text-sm text-neutral-400">Rank 4 choices and see how you compare to the consensus.</h2>
+            <h2 className="lg:text-xl text-sm text-neutral-400">Get 4 chances to guess the consensus!</h2>
           </div>
           <a
             href="https://consensus-game.vercel.app/"
@@ -130,12 +130,17 @@ export default function Consensus() {
             )
           })}
         </div>
+        <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <p className="lg:text-base text-sm mt-8">
-          Consensus is a game where every day there are 4 words that fit into a common category. You rank them in order of your opinion on &quot;best&quot; to &quot;worst&quot; and once you submit your ranking, you can see how it comapres to the calculated average ranking, or the &quot;consensus&quot;.
+          Consensus is a game where every day there are 4 words that fit into a common category. You get four chances to guess what the consensus was, calculated from the opinions of everyone that submitted their rankings the previous day. After each guess, you&apos;re given a similarity score to quantify how close your guess was to the consensus, but we won&apos;t tell you which words were in the right or wrong places. Once you finish the game, you get to submit your ranking for tomorrow&apos;s category and your opinion will go towards determining that consensus.
+        </p>
+        <br />
+        <p>
+          In the archive, you can view the stats (both global and personal) for days you&apos;ve played, and play (try to guess the consensus) days you haven&apos;t.
         </p>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
-        <p className="p-4 rounded-md border border-green-500 bg-green-500/15 mb-12 lg:text-base text-sm">
-          This is a passion project with a few of my friends! We&apos;ve had a great time building it, and plan on continuing to add features and improve the game into the future.
+        <p className="p-4 rounded-md border border-yellow-500 bg-yellow-500/15 mb-12 lg:text-base text-sm">
+          This was a pet project with a few of my friends! We&apos;ve had a great time building it, but currently the deployment is a little bit broken 😢. If it sounds cool, please reach out to me and I can give you a demo!
         </p>
         <NextProject path="/kiosk" title="Hospital Kiosk" />
         <br className="lg:block hidden" />
