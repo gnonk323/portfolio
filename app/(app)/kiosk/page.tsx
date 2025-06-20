@@ -148,7 +148,6 @@ export default function Kiosk() {
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <NextProject path="/dct" title="Data Collection Tool" />
         <br />
-        <Footer />
       </div>
     </div>
   );

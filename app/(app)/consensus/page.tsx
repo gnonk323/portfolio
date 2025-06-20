@@ -144,7 +144,6 @@ export default function Consensus() {
         </p>
         <NextProject path="/kiosk" title="Hospital Kiosk" />
         <br className="lg:block hidden" />
-        <Footer></Footer>
       </div>
     </div>
   );
