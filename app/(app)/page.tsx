@@ -21,7 +21,7 @@ export default function Home() {
         <br />
         <div>
           <p className="text-xl">
-            I&apos;m a Senior studying Computer Sciecne and Data Science at <a href={"https://www.wpi.edu/academics/departments/computer-science"} target={"_blank"} className={"underline decoration-dotted lg:hover:text-neutral-400 transition-colors cursor-pointer"}>Worcester Polytechnic Institute</a>, with a passion for UI/UX design and front-end development.
+            I&apos;m a recent Computer Sciecne graduate from <a href={"https://www.wpi.edu/academics/departments/computer-science"} target={"_blank"} className={"underline decoration-dotted lg:hover:text-neutral-400 transition-colors cursor-pointer"}>Worcester Polytechnic Institute</a>, with a passion for UI/UX design and front-end development.
           </p>
         </div>
         <hr className={"h-px my-6 dark:bg-neutral-700 bg-neutral-300 border-0"}/>

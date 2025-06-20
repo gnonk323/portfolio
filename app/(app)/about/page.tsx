@@ -10,14 +10,13 @@ export default function About() {
           <div>
             <SectionHeader icon={<ChatBubbleLeftIcon />}>ABOUT ME</SectionHeader>
             <p className={"lg:text-2xl text-lg"}>
-              I am a Computer Science student at Worcester Polytechnic Institute, graduating in the Spring of 2025, and
+              I am recent Computer Science graduate from Worcester Polytechnic Institute in the Spring of 2025, and
               looking to start my career in software engineering.
               Throughout my various project experiences, I&apos;ve found a passion for front-end development and UI/UX
               design.
-              I am currently working as a Software Development Intern at InvoiceCloud for the Summer of 2024.
             </p>
           </div>
-          <img src="/images/gustave-montana.jpg" alt="headshot" className={"rounded-full lg:size-52 ml-12 border-solid border-2 border-blue-500 shadow-md hidden lg:block"} />
+          <img src="/images/gustave-montana.jpg" alt="headshot" className={"rounded-full lg:size-48 ml-12 border-solid border-2 border-blue-500 shadow-md hidden lg:block"} />
         </div>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <div className={"flex lg:flex-row flex-col lg:gap-10"}>
@@ -44,7 +43,7 @@ export default function About() {
               <p className="lg:text-2xl text-xl"><span className="lg:text-lg text-base text-[#007FFF] font-black mr-3">MAJOR</span>Computer Science</p>
               <p className="lg:text-2xl text-xl"><span className="lg:text-lg text-base text-[#007FFF] font-black mr-3">MINOR</span>Data Science</p>
             </div>
-            <p className="italic text-neutral-400">Graduating May 2025</p>
+            <p className="italic text-neutral-400">Graduated May 2025</p>
           </div>
         </div>
         <Footer />
