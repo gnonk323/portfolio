@@ -127,7 +127,7 @@ export default function Navbar() {
             <h2 className={"text-sm font-semibold text-[#007FFF] mb-2"}>CONTACT ME</h2>
             <ul>
               <li className={"mb-1"}>
-                <a href="mailto:gmmontana@wpi.edu" className="flex items-center gap-2">
+                <a href="mailto:gmt015@gmail.com" className="flex items-center gap-2">
                   <EnvelopeIcon className="h-4 w-4"/>
                   Email
                 </a>

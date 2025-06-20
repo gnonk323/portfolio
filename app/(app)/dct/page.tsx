@@ -137,7 +137,6 @@ export default function DCT() {
         </div> */}
         <NextProject path="/tictactoe" title="'Endless' TicTacToe" />
         <br />
-        <Footer />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import AdventureImage, { ImageTile } from "@/components/AdventureImage";
+import Footer from "@/components/Footer";
 
 export default async function Adventures() {
   const images: ImageTile[] = [
@@ -137,7 +138,7 @@ export default async function Adventures() {
         <h2 className="lg:text-xl text-sm text-neutral-400">
           Check out some of the places I&apos;ve been and things I&apos;ve seen
         </h2>
-        <div className="columns-1 sm:columns-2 gap-4 mt-8">
+        <div className="columns-1 sm:columns-2 gap-4 mt-8 mb-16">
           {images.map((image, index) => (
             <div key={index} className="break-inside-avoid mb-4">
               <AdventureImage
@@ -150,6 +151,7 @@ export default async function Adventures() {
             </div>
           ))}
         </div>
+        <p className="text-center text-xs text-neutral-400 italic">Hey there :)</p>
       </div>
     </div>
   );

@@ -15,7 +15,6 @@ export default function TicTacToe() {
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <p className="lg:text-base text-sm">More often than not, normal games of tic tac toe end in a tie. However, in this version of the game, each player is only allowed to have up to 3 X&apos;s or O&apos;s at any placed at any given moment, meaning that the game continues until one of the players wins. When a fourth X or O is placed, that player&apos;s oldest piece is removed from the board. You can choose to play against another real person by taking turns moving, or play against the computer!</p>
         <br className="lg:block hidden" />
-        <Footer />
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import SectionHeader from "@/components/SectionHeader";
 export default function About() {
   return (
     <main className="min-h-screen">
-      <div className={"lg:ml-64 lg:py-10 lg:px-24 lg:mt-0 mt-24 p-6 min-h-screen"}>
+      <div className={"lg:ml-64 lg:pt-10 lg:px-24 lg:mt-0 mt-24 min-h-screen"}>
         <div className="flex items-center">
           <div>
             <SectionHeader icon={<ChatBubbleLeftIcon />}>ABOUT ME</SectionHeader>
@@ -46,7 +46,6 @@ export default function About() {
             <p className="italic text-neutral-400">Graduated May 2025</p>
           </div>
         </div>
-        <Footer />
       </div>
     </main>
   );

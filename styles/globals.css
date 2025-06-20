@@ -27,7 +27,11 @@ li a:hover {
   transform: translateX(4px);
 }
 
-code {
+ol li {
+  padding-left: 1.5em;
+}
+
+.inline-code {
   background-color: rgb(225, 225, 225);
   font-family: monospace;
   padding: 0.2em 0.4em;
@@ -35,6 +39,6 @@ code {
   border-bottom: 2px solid #3B82F6; /* Tailwind blue-500 */
 }
 
-.dark code {
+.dark .inline-code {
   background-color: rgb(50, 50, 50)
 }

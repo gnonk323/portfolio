@@ -10,14 +10,18 @@ export default function UnderTheHood() {
         </div>
         <br />
         <div>
-          <p>
-            This site is built with <code>Next.js</code> using the App Router, written in <code>TypeScript</code>, and styled with <code>Tailwind CSS</code>. It&apos;s hosted on <code>Vercel</code>, and deployed automatically from <code>GitHub</code>. I aim to keep the stack simple, modern, and fast.
+          <p className="lg:text-base text-sm">
+            This site is built with <code className='inline-code'>Next.js</code> using the App Router, written in <code className='inline-code'>TypeScript</code>, and styled with <code className='inline-code'>Tailwind CSS</code>. It&apos;s hosted on <code className='inline-code'>Vercel</code>, and deployed automatically from <code className='inline-code'>GitHub</code>. I aim to keep the stack simple, modern, and fast.
           </p>
         </div>
         <br />
-        <button className="rounded-md bg-blue-500 hover:bg-blue-600 transition-colors px-3 py-2 font-bold">
-          Check out the source code on GitHub!
-        </button>
+        <a
+          href="https://github.com/gnonk323/portfolio"
+          target="_blank"
+          className="lg:text-base text-sm rounded-md bg-[#007FFF] hover:bg-blue-600 transition-colors px-3 py-2 font-bold text-white"
+        >
+          Check out the complete source code on GitHub!
+        </a>
       </div>
     </div>
   );
