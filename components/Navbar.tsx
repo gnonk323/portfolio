@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Bars3Icon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   return (
@@ -68,7 +69,10 @@ export default function Navbar() {
       <aside
         className={"lg:block hidden w-64 h-screen p-10 border-r dark:border-neutral-700 border-neutral-300 fixed"}>
         <nav>
-          <a href="/" className={"text-6xl font-black font-serif text-[#007FFF] hover:text-[#0065CC] cursor-pointer transition-colors"}>GM</a>
+          <div className="flex justify-between items-center">
+            <a href="/" className={"text-6xl font-black font-serif text-[#007FFF] hover:text-[#0065CC] cursor-pointer transition-colors"}>GM</a>
+            <ThemeToggle />
+          </div>
           <div className="mt-6">
             <ul>
               <li className={"mb-2"}>
@@ -110,8 +114,11 @@ export default function Navbar() {
           <div>
             <h2 className={"text-sm font-semibold text-[#007FFF] mb-2"}>EXTRAS</h2>
             <ul>
-              <li>
+              <li className="mb-1">
                 <a href={"/adventures"}>Adventures</a>
+              </li>
+              <li>
+                <a href={"/under-the-hood"}>Under the Hood</a>
               </li>
             </ul>
           </div>
