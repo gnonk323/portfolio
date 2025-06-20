@@ -44,6 +44,12 @@ export default function Navbar() {
                 <DropdownMenuItem>&apos;Endless&apos; TicTacToe</DropdownMenuItem>
               </Link>
               <DropdownMenuSeparator />
+              <DropdownMenuLabel>Extras</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <Link href={"/adventures"}>
+                <DropdownMenuItem>Adventures</DropdownMenuItem>
+              </Link>
+              <DropdownMenuSeparator />
               <DropdownMenuLabel>Contact Me</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <Link href={"mailto:gmmontana@wpi.com"} target="_blank">
@@ -97,6 +103,15 @@ export default function Navbar() {
               </li>
               <li>
                 <a href="/tictactoe">&apos;Endless&apos; TicTacToe</a>
+              </li>
+            </ul>
+          </div>
+          <hr className={"h-px my-6 dark:bg-neutral-700 bg-neutral-300 border-0"}/>
+          <div>
+            <h2 className={"text-sm font-semibold text-[#007FFF] mb-2"}>EXTRAS</h2>
+            <ul>
+              <li>
+                <a href={"/adventures"}>Adventures</a>
               </li>
             </ul>
           </div>
