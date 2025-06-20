@@ -84,12 +84,14 @@ export default function DCT() {
         </p>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <SectionHeader icon={<BoltIcon />}>FEATURES</SectionHeader>
-        <p>Students can log in, create or join a group, and collabortively conduct their research. Each group is generated with a random access code which students need to join a group.</p>
+        <p className="lg:text-base text-sm">
+          Students can log in, create or join a group, and collabortively conduct their research. Each group is generated with a random access code which students need to join a group.
+        </p>
         <div className="grid grid-cols-2 grid-rows-2 mt-4 gap-2">
-          <p className="rounded-md dark:bg-neutral-800 bg-neutral-200 p-4">Create custom reusable data structures called forms for data and interview collection.</p>
-          <p className="rounded-md dark:bg-neutral-800 bg-neutral-200 p-4">A suite of interview tools which includes built-in recording and AI transcription and summarization.</p>
-          <p className="rounded-md dark:bg-neutral-800 bg-neutral-200 p-4">The ability to geotag your data collection entries and view them on the map page.</p>
-          <p className="rounded-md dark:bg-neutral-800 bg-neutral-200 p-4">An offline mode where entries can be cached locally until internet connection is available.</p>
+          <p className="lg:text-base text-sm rounded-md dark:bg-neutral-800 bg-neutral-200 p-4">Create custom reusable data structures called forms for data and interview collection.</p>
+          <p className="lg:text-base text-sm rounded-md dark:bg-neutral-800 bg-neutral-200 p-4">A suite of interview tools which includes built-in recording and AI transcription and summarization.</p>
+          <p className="lg:text-base text-sm rounded-md dark:bg-neutral-800 bg-neutral-200 p-4">The ability to geotag your data collection entries and view them on the map page.</p>
+          <p className="lg:text-base text-sm rounded-md dark:bg-neutral-800 bg-neutral-200 p-4">An offline mode where entries can be cached locally until internet connection is available.</p>
         </div>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <SectionHeader icon={<EyeIcon />}>DESIGN</SectionHeader>
@@ -97,19 +99,19 @@ export default function DCT() {
         <video autoPlay loop muted playsInline className="rounded-md">
           <source src="/images/dct/create-account.mp4" />
         </video>
-        <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">Once logged in, if a user is not already in a project they can join one or create a new one.</p>
+        <p className="mt-2 text-xs lg:text-sm text-neutral-500 dark:text-neutral-400">Once logged in, if a user is not already in a project they can join one or create a new one.</p>
         <br />
         <h2 className="font-semibold mb-1">Create Form</h2>
         <video autoPlay loop muted playsInline className="rounded-md">
           <source src="/images/dct/create-form.mp4" />
         </video>
-        <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">A form is a reusable data structure. They are usable by anyone in the project and are the main method of data collection.</p>
+        <p className="mt-2 text-xs lg:text-sm text-neutral-500 dark:text-neutral-400">A form is a reusable data structure. They are usable by anyone in the project and are the main method of data collection.</p>
         <br />
         <h2 className="font-semibold mb-1">Geotagged Entries</h2>
         <video autoPlay loop muted playsInline className="rounded-md">
           <source src="/images/dct/map-page.mp4" />
         </video>
-        <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">Every entry can be geotagged with the user&apos;s current location or a custom location. Entries can be viewed on the map.</p>
+        <p className="mt-2 text-xs lg:text-sm text-neutral-500 dark:text-neutral-400">Every entry can be geotagged with the user&apos;s current location or a custom location. Entries can be viewed on the map.</p>
         <br />
         <div className="grid grid-cols-2 grid-rows-2 gap-4">
           <div>
