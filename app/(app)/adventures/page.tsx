@@ -14,7 +14,7 @@ export default async function Adventures() {
       alt: "White Gold, sailboat",
       location: "Pilot's Point Marina",
       locationHref: "https://maps.app.goo.gl/jurfHE3AmDrRZMHJ7",
-      caption: "Sailboat named White Gold on dry docks."
+      caption: ""
     },
     {
       src: "rumor",
@@ -137,7 +137,7 @@ export default async function Adventures() {
         <h2 className="lg:text-xl text-sm text-neutral-400">
           Check out some of the places I&apos;ve been and things I&apos;ve seen
         </h2>
-        <div className="columns-1 sm:columns-2 md:columns-3 gap-4 mt-8">
+        <div className="columns-1 sm:columns-2 gap-4 mt-8">
           {images.map((image, index) => (
             <div key={index} className="break-inside-avoid mb-4">
               <AdventureImage

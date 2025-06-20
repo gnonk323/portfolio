@@ -145,8 +145,7 @@ export default function Kiosk() {
         <p className="lg:text-base text-sm">
           All in all, this project was an incredible learning experience for me! It was the first time I took on a large full-stack application like this, and working in a team this large on a software development project was a first too. I got the chance to take on a leadership role, and I learned a lot about the Agile software development process. I also learned a lot about the importance of communication in a team, and how to work with people who have different skill sets and backgrounds than me. I&apos;ve known I have a passion for front-end development for a while, and this was a great opportunity to throw myself into a large UI undertaking. Overall, I’m really proud of the work we did!
         </p>
-        <br />
-        <br />
+        <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <NextProject path="/dct" title="Data Collection Tool" />
         <br />
         <Footer />
