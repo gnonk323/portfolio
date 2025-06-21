@@ -55,7 +55,7 @@
   font-size: 40px;
   font-weight: 900;
   text-align: center;
-  border: rgba(255, 255, 255, 0.87) solid 1px;
+  border: rgba(0, 0, 0, 0.87) solid 1px;
   border-radius: 10px;
   height: 80px;
   width: 80px;
@@ -64,6 +64,10 @@
   justify-content: center;
   user-select: none;
   transition: 0.2s;
+}
+
+.dark .grid-item {
+  border: rgba(255, 255, 255, 0.87) solid 1px;
 }
 
 .grid-item.x {

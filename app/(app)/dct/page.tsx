@@ -1,9 +1,27 @@
-import { ExclamationCircleIcon, MagnifyingGlassIcon, LightBulbIcon, KeyIcon, BoltIcon, EyeIcon, BeakerIcon } from "@heroicons/react/24/solid";
+import { ExclamationCircleIcon, MagnifyingGlassIcon, LightBulbIcon, KeyIcon, BoltIcon, EyeIcon, CodeBracketIcon } from "@heroicons/react/24/solid";
 import Footer from "@/components/Footer";
 import NextProject from "@/components/NextProject";
 import SectionHeader from "@/components/SectionHeader";
 
 export default function DCT() {
+  const technologies: string[] = [
+    "Typescript",
+    "Node.js",
+    "React.js",
+    "Express",
+    "Postgres",
+    "TypeORM",
+    "AssemblyAI",
+    "Shadcn",
+    "OpenStreetMap",
+    "Nominatim",
+    "AWS",
+    "Docker",
+    "Git",
+    "Jira",
+    "Figma"
+  ];
+
   return (
     <div className="min-h-screen">
       <div className="lg:ml-64 lg:py-10 lg:px-48 lg:mt-0 mt-24 p-6 min-h-screen">
@@ -16,9 +34,17 @@ export default function DCT() {
         </div>
         <img src="/images/mqpMOCK.png" alt="" className="max-w-[80%] mx-auto" />
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
-        {/* <SectionHeader icon={<ExclamationCircleIcon />}>BACKGROUND</SectionHeader> */}
+        <SectionHeader icon={<CodeBracketIcon />}>TECHNOLOGY STACK</SectionHeader>
+        <div className="flex flex-wrap">
+          {technologies.map((tech: string, index: number) => {
+            return (
+              <div key={index} className="border border-neutral-600 rounded-full dark:bg-neutral-700 bg-neutral-300 font-semibold px-4 py-2 mr-2 mb-2 lg:text-base text-sm">{tech}</div>
+            )
+          })}
+        </div>
+        <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <p className="lg:text-base text-sm">
-          This project is my capstone, or <a className="text-[#007FFF] font-semibold hover:text-[#0065CC] cursor-pointer transition-colors" href="https://www.wpi.edu/project-based-learning/project-based-education/major-qualifying-project">Major Qualifying Project (MQP)</a> for my Computer Science BS degree. It was developed during the summer of 2024, into the first term of the fall semester. I worked on a team of 5, using the Agile methodology for software development.
+          This project is my capstone, or <a className="text-[#007FFF] font-semibold hover:text-[#0065CC] cursor-pointer transition-colors" href="https://www.wpi.edu/project-based-learning/project-based-education/major-qualifying-project">Major Qualifying Project (MQP)</a> for my Computer Science BS degree. It is a comprehensive data collecton application built for the WPI study abroad research project program, called the Interactive Qualifying Project (IQP). It was developed during the summer of 2024, into the first term of the fall semester. I worked on a team of 5, using the Agile methodology for software development.
         </p>
         <div className="rounded-md dark:bg-neutral-700 bg-neutral-200 lg:p-4 p-2 lg:my-12 my-6">
           <svg className="w-8 mb-2 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">

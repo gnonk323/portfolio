@@ -6,7 +6,7 @@ import SectionHeader from "@/components/SectionHeader";
 export default function Kiosk() {
   const technologies: string[] = [
     "Typescript",
-    "React",
+    "React.js",
     "Node.js",
     "Material UI",
     "Prisma",
