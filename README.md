@@ -8,11 +8,11 @@ Welcome to my personal portfolio website! This site showcases my projects, exper
 
 ### Tech Stack
 
-- **Framework**: [Next.js](https://nextjs.org/) with the App Router
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
+- **Framework**: [Next.js with the App Router](https://nextjs.org/docs)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Hosting**: [Vercel](https://vercel.com/)
-- **Other Tools**: React, Heroicons, and Next Themes
+- **Other Tools**: [Heroicons](https://heroicons.com/), [Next Themes](https://github.com/pacocoursey/next-themes), [Motion](https://motion.dev/)
 
 ## Features
 
@@ -23,7 +23,7 @@ Welcome to my personal portfolio website! This site showcases my projects, exper
 
 ## Deployment
 
-This portfolio is deployed on [Vercel](https://vercel.com/). Any changes pushed to the `main` branch here on GitHub are automatically deployed.
+This portfolio is deployed on Vercel. Any changes pushed to the `main` branch here on GitHub are automatically deployed.
 
 ## Projects Highlighted
 
