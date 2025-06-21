@@ -1,22 +1,28 @@
+"use client"
+
 import { ChatBubbleLeftIcon, AcademicCapIcon } from "@heroicons/react/24/solid";
-import Footer from "@/components/Footer";
 import SectionHeader from "@/components/SectionHeader";
+import { motion } from "motion/react";
 
 export default function About() {
   return (
     <main className="min-h-screen">
-      <div className={"lg:ml-64 lg:pt-10 lg:px-24 lg:mt-0 mt-24 min-h-screen"}>
+      <div className={"lg:ml-64 lg:pt-10 lg:px-24 lg:mt-0 p-6 mt-24 min-h-screen"}>
         <div className="flex items-center">
           <div>
             <SectionHeader icon={<ChatBubbleLeftIcon />}>ABOUT ME</SectionHeader>
-            <p className={"lg:text-2xl text-lg"}>
+            <p className={"lg:text-2xl"}>
               I am recent Computer Science graduate from Worcester Polytechnic Institute in the Spring of 2025, and
               looking to start my career in software engineering.
               Throughout my various project experiences, I&apos;ve found a passion for front-end development and UI/UX
               design.
             </p>
           </div>
-          <img src="/images/gustave-montana.jpg" alt="headshot" className={"rounded-full lg:size-48 ml-12 border-solid border-2 border-blue-500 shadow-md hidden lg:block"} />
+          <motion.img 
+            src="/images/gustave-montana.jpg" alt="headshot"
+            className={"rounded-full lg:size-48 ml-12 border-solid border-2 border-blue-500 shadow-md hidden lg:block"}
+            whileTap={{ scale: 0.95 }}
+          />
         </div>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <div className={"flex lg:flex-row flex-col lg:gap-10"}>
