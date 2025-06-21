@@ -40,8 +40,6 @@ export default function Home() {
                        description={"Each player is only allowed have 3 X's or O's on the board at once, making it impossible for the game to end in a tie!"}
                        image={"/images/tictactoeMOCK.png"} path={"/tictactoe"}/>
         </div>
-        <br />
-        <Footer/>
       </div>
     </main>
   );
