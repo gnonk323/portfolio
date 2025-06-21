@@ -35,7 +35,7 @@ export default function About() {
           <div>
             <SectionHeader icon={<ChatBubbleLeftIcon />}>ABOUT ME</SectionHeader>
             <p className={"lg:text-2xl"}>
-              I am recent Computer Science graduate from Worcester Polytechnic Institute in the Spring of 2025, and
+              I am a recent Computer Science graduate from Worcester Polytechnic Institute in the Spring of 2025, and
               looking to start my career in software engineering.
               Throughout my various project experiences, I&apos;ve found a passion for front-end development and UI/UX
               design.
