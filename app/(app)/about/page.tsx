@@ -7,17 +7,13 @@ import { useState, useEffect } from "react";
 
 export default function About() {
   const [clickCount, setClickCount] = useState(0);
-  const [imageSrc, setImageSrc] = useState("/images/gustave-montana.jpg");
-  const [lastClickTime, setLastClickTime] = useState<number | null>(null);
+  const [stache, setStache] = useState(false);
 
   const handleImageClick = () => {
-    const now = Date.now();
-    setLastClickTime(now);
-
     setClickCount((prev) => {
       const newCount = prev + 1;
       if (newCount === 5) {
-        setImageSrc("/images/gustave-montana-stache.jpg");
+        setStache(true);
       }
       return newCount;
     });
@@ -28,7 +24,6 @@ export default function About() {
       const timer = setTimeout(() => {
         setClickCount(0);
       }, 2000);
-
       return () => clearTimeout(timer); // Cleanup the timer on unmount or when clickCount changes
     }
   }, [clickCount]);
@@ -47,7 +42,7 @@ export default function About() {
             </p>
           </div>
           <motion.img 
-            src={imageSrc} 
+            src={stache ? "images/gustave-montana-stache.jpg" : "images/gustave-montana.jpg"}
             alt="headshot"
             className={"rounded-full lg:size-48 ml-12 border-solid border-2 border-blue-500 shadow-md hidden lg:block"}
             whileTap={{ scale: 0.95 }}
