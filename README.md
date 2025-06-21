@@ -1,10 +1,10 @@
 # Gustave Montana - Portfolio Website
 
-Welcome to my personal portfolio website! This site showcases my projects, experiences, and skills as a software engineer, with a focus on front-end development and UI/UX design.
+https://gustave-montana.vercel.app/
 
 ## About the Project
 
-This portfolio is built using modern web technologies to ensure a fast, responsive, and visually appealing experience. It highlights my journey as a developer, including projects I've worked on, my educational background, and my passion for creating intuitive user interfaces.
+Welcome to my personal portfolio website! This site showcases my projects, experiences, and skills as a software engineer, with a focus on front-end development and UI/UX design. It highlights my journey as a developer, including projects I've worked on, my educational background, and my passion for creating intuitive user interfaces.
 
 ### Tech Stack
 
@@ -18,38 +18,12 @@ This portfolio is built using modern web technologies to ensure a fast, responsi
 
 - **Projects Showcase**: Explore detailed descriptions of my key projects, including technologies used and challenges overcome.
 - **Responsive Design**: Optimized for all devices, from desktops to mobile phones.
-- **Dark Mode**: Toggle between light and dark themes for a personalized experience.
-- **Interactive Elements**: Animations and transitions for a smooth user experience.
-
-## Getting Started
-
-To run this project locally, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/gnonk323/portfolio.git
-   cd portfolio
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the site.
+- **Dark Mode**: Toggle between light and dark theme.
+- **Interactive Elements**: Fun animations and interactions, including an easter egg (can you find it??).
 
 ## Deployment
 
-This portfolio is deployed on [Vercel](https://vercel.com/). Any changes pushed to the `main` branch are automatically deployed.
+This portfolio is deployed on [Vercel](https://vercel.com/). Any changes pushed to the `main` branch here on GitHub are automatically deployed.
 
 ## Projects Highlighted
 
@@ -60,10 +34,10 @@ This portfolio is deployed on [Vercel](https://vercel.com/). Any changes pushed 
 
 ## Contact
 
-Feel free to reach out to me via:
+Like it? Please feel free to reach out to me via:
 
 - **Email**: [gmt015@gmail.com](mailto:gmt015@gmail.com)
 - **LinkedIn**: [linkedin.com/in/gustave-montana](https://www.linkedin.com/in/gustave-montana/)
 - **GitHub**: [github.com/gnonk323](https://github.com/gnonk323)
 
-Thank you for visiting my portfolio!
+Thank you for your time!
