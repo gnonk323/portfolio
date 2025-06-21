@@ -1,7 +1,10 @@
+"use client"
+
 import { ExclamationCircleIcon, MagnifyingGlassIcon, LightBulbIcon, KeyIcon, BoltIcon, EyeIcon, CodeBracketIcon } from "@heroicons/react/24/solid";
-import Footer from "@/components/Footer";
 import NextProject from "@/components/NextProject";
 import SectionHeader from "@/components/SectionHeader";
+import { motion, AnimatePresence, LayoutGroup } from "motion/react";
+import { useState } from "react";
 
 export default function DCT() {
   const technologies: string[] = [
@@ -21,6 +24,15 @@ export default function DCT() {
     "Jira",
     "Figma"
   ];
+
+  const imageGrid = [
+    { title: "Manage Team", src: "/images/dct/manage-team.png" },
+    { title: "Project Overview", src: "/images/dct/project-overview.png" },
+    { title: "Dashboard", src: "/images/dct/dashboard.png" },
+    { title: "Help Modal", src: "/images/dct/help-modal.png" },
+  ];
+
+  const [expandedImage, setExpandedImage] = useState<{title: string, src: string} | null>(null);
 
   return (
     <div className="min-h-screen">
@@ -139,28 +151,62 @@ export default function DCT() {
         </video>
         <p className="mt-2 text-xs lg:text-sm text-neutral-500 dark:text-neutral-400">Every entry can be geotagged with the user&apos;s current location or a custom location. Entries can be viewed on the map.</p>
         <br />
-        <div className="grid grid-cols-2 grid-rows-2 gap-4">
-          <div>
-            <h2 className="font-semibold mb-1">Manage Team</h2>
-            <img src="/images/dct/manage-team.png" alt="Manage Team Page" className="rounded-md" />
+        <LayoutGroup>
+          <AnimatePresence>
+            {expandedImage && (
+              <motion.div
+                key="overlay"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 0.4 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                className="fixed inset-0 bg-black backdrop-blur-sm z-10"
+                onClick={() => setExpandedImage(null)}
+              />
+            )}
+          </AnimatePresence>
+          <div className="grid grid-cols-2 grid-rows-2 gap-4 relative z-20">
+            <AnimatePresence mode="wait">
+              {expandedImage ? (
+                <motion.div
+                  key="expanded"
+                  layoutId={expandedImage.src}
+                  className="col-span-2 row-span-2 cursor-zoom-out"
+                  onClick={() => setExpandedImage(null)}
+                  transition={{ type: "spring", stiffness: 250, damping: 25 }}
+                >
+                  <h2 className="font-semibold mb-1">{expandedImage.title}</h2>
+                  <motion.img
+                    layoutId={"img-" + expandedImage.src}
+                    src={expandedImage.src}
+                    alt={expandedImage.title}
+                    className="rounded-md w-full h-auto"
+                  />
+                </motion.div>
+              ) : (
+                imageGrid.map((image) => (
+                  <motion.div
+                    key={image.src}
+                    layoutId={image.src}
+                    onClick={() => setExpandedImage(image)}
+                    className="cursor-pointer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <h2 className="font-semibold mb-1">{image.title}</h2>
+                    <motion.img
+                      layoutId={"img-" + image.src}
+                      src={image.src}
+                      alt={image.title}
+                      className="rounded-md"
+                    />
+                  </motion.div>
+                ))
+              )}
+            </AnimatePresence>
           </div>
-          <div>
-            <h2 className="font-semibold mb-1">Project Overview</h2>
-            <img src="/images/dct/project-overview.png" alt="Project Overview Page" className="rounded-md" />
-          </div>
-          <div>
-            <h2 className="font-semibold mb-1">Dashboard</h2>
-            <img src="/images/dct/dashboard.png" alt="Dashboard" className="rounded-md" />
-          </div>
-          <div>
-            <h2 className="font-semibold mb-1">Help Modal</h2>
-            <img src="/images/dct/help-modal.png" alt="Help Modal" className="rounded-md" />
-          </div>
-        </div>
+        </LayoutGroup>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
-        {/* <div className="rounded-md bg-red-400 bg-opacity-35 p-4 border border-red-400">
-          <h3 className="font-semibold lg:text-base text-sm">This project is still under construction. If it sounds interesting to you, please reach out and we can talk about it in more detail!</h3>
-        </div> */}
         <NextProject path="/tictactoe" title="'Endless' TicTacToe" />
         <br />
       </div>
