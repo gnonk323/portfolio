@@ -3,8 +3,36 @@
 import { ChatBubbleLeftIcon, AcademicCapIcon } from "@heroicons/react/24/solid";
 import SectionHeader from "@/components/SectionHeader";
 import { motion } from "motion/react";
+import { useState, useEffect } from "react";
 
 export default function About() {
+  const [clickCount, setClickCount] = useState(0);
+  const [imageSrc, setImageSrc] = useState("/images/gustave-montana.jpg");
+  const [lastClickTime, setLastClickTime] = useState<number | null>(null);
+
+  const handleImageClick = () => {
+    const now = Date.now();
+    setLastClickTime(now);
+
+    setClickCount((prev) => {
+      const newCount = prev + 1;
+      if (newCount === 5) {
+        setImageSrc("/images/gustave-montana-stache.jpg");
+      }
+      return newCount;
+    });
+  };
+
+  useEffect(() => {
+    if (clickCount > 0 && clickCount < 5) {
+      const timer = setTimeout(() => {
+        setClickCount(0);
+      }, 2000);
+
+      return () => clearTimeout(timer); // Cleanup the timer on unmount or when clickCount changes
+    }
+  }, [clickCount]);
+
   return (
     <main className="min-h-screen">
       <div className={"lg:ml-64 lg:pt-10 lg:px-24 lg:mt-0 p-6 mt-24 min-h-screen"}>
@@ -19,9 +47,11 @@ export default function About() {
             </p>
           </div>
           <motion.img 
-            src="/images/gustave-montana.jpg" alt="headshot"
+            src={imageSrc} 
+            alt="headshot"
             className={"rounded-full lg:size-48 ml-12 border-solid border-2 border-blue-500 shadow-md hidden lg:block"}
             whileTap={{ scale: 0.95 }}
+            onClick={handleImageClick}
           />
         </div>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
