@@ -44,6 +44,9 @@ export default function Navbar() {
               <Link href={"/tictactoe"}>
                 <DropdownMenuItem>&apos;Endless&apos; TicTacToe</DropdownMenuItem>
               </Link>
+              <Link href={"https://gus-monkeys.vercel.app/"}>
+                <DropdownMenuItem>Random Monkeys</DropdownMenuItem>
+              </Link>
               <DropdownMenuSeparator />
               <DropdownMenuLabel>Extras</DropdownMenuLabel>
               <DropdownMenuSeparator />
@@ -107,6 +110,9 @@ export default function Navbar() {
               </li>
               <li>
                 <a href="/tictactoe">&apos;Endless&apos; TicTacToe</a>
+              </li>
+              <li>
+                <a href="https://gus-monkeys.vercel.app/">Random Monkeys</a>
               </li>
             </ul>
           </div>
