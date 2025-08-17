@@ -108,7 +108,7 @@ export default function Navbar() {
               <li className={"mb-1"}>
                 <a href={"/dct"}>Data Collection Tool</a>
               </li>
-              <li>
+              <li className="mb-1">
                 <a href="/tictactoe">&apos;Endless&apos; TicTacToe</a>
               </li>
               <li>
