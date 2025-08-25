@@ -1,3 +1,5 @@
+"use client"
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -9,8 +11,12 @@ import {
 import { Bars3Icon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
+import { usePathname } from "next/navigation";
 
 function NavbarItem({ path, newTab, children }: { path: string, newTab?: boolean, children: React.ReactNode }) {
+  const pathname = usePathname()
+  const isActive = pathname === path
+
   return (
     <li className="transition-all hover:translate-x-1 dark:hover:text-neutral-400 hover:text-neutral-500">
       <a
@@ -19,6 +25,7 @@ function NavbarItem({ path, newTab, children }: { path: string, newTab?: boolean
         className="flex items-center gap-2 py-0.5"
       >
         {children}
+        {isActive && <div className="p-1 rounded-full bg-primary" />}
       </a>
     </li>
   )
