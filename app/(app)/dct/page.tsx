@@ -3,8 +3,9 @@
 import { ExclamationCircleIcon, MagnifyingGlassIcon, LightBulbIcon, KeyIcon, BoltIcon, EyeIcon, CodeBracketIcon } from "@heroicons/react/24/solid";
 import NextProject from "@/components/NextProject";
 import SectionHeader from "@/components/SectionHeader";
-import { motion, AnimatePresence, LayoutGroup } from "motion/react";
+import { motion, AnimatePresence, LayoutGroup, useScroll } from "motion/react";
 import { useState } from "react";
+import ScrollIndicator from "@/components/ui/ScrollIndicator";
 
 export default function DCT() {
   const technologies: string[] = [
@@ -33,9 +34,11 @@ export default function DCT() {
   ];
 
   const [expandedImage, setExpandedImage] = useState<{title: string, src: string} | null>(null);
+  const { scrollYProgress } = useScroll()
 
   return (
     <div className="min-h-screen">
+      <ScrollIndicator scrollProgress={scrollYProgress} />
       <div className="lg:ml-64 lg:py-10 lg:px-48 lg:mt-0 mt-24 p-6 min-h-screen">
         <div className="flex justify-between items-center">
           <div>
@@ -56,14 +59,14 @@ export default function DCT() {
         </div>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <p className="lg:text-base text-sm">
-          This project is my capstone, or <a className="text-[#007FFF] font-semibold hover:text-[#0065CC] cursor-pointer transition-colors" href="https://www.wpi.edu/project-based-learning/project-based-education/major-qualifying-project">Major Qualifying Project (MQP)</a> for my Computer Science BS degree. It is a comprehensive data collecton application built for the WPI study abroad research project program, called the Interactive Qualifying Project (IQP). It was developed during the summer of 2024, into the first term of the fall semester. I worked on a team of 5, using the Agile methodology for software development.
+          This project is my capstone, or <a className="text-primary font-semibold hover:text-[#0065CC] cursor-pointer transition-colors" href="https://www.wpi.edu/project-based-learning/project-based-education/major-qualifying-project">Major Qualifying Project (MQP)</a> for my Computer Science BS degree. It is a comprehensive data collecton application built for the WPI study abroad research project program, called the Interactive Qualifying Project (IQP). It was developed during the summer of 2024, into the first term of the fall semester. I worked on a team of 5, using the Agile methodology for software development.
         </p>
         <div className="rounded-md dark:bg-neutral-700 bg-neutral-200 lg:p-4 p-2 lg:my-12 my-6">
           <svg className="w-8 mb-2 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" fill="#007FFF"/>
           </svg>
           <p className="font-semibold lg:text-lg text-center lg:mx-4 mx-2">
-            The <a className="text-[#007FFF] font-bold hover:text-[#0065CC] cursor-pointer transition-colors" href="https://www.wpi.edu/project-based-learning/project-based-education/interactive-qualifying-project" target="_blank">Interactive Qualifying Project (IQP)</a> is one of the most distinctive elements of the WPI Plan and WPI&apos;s signature project-based curriculum, giving every WPI student the experience of working in interdisciplinary teams to solve a problem or need that lies at the intersection of science and society. Unlike an academic course, this nine-credit-hour requirement involves students working in teams, with students not in their major, to tackle an issue that relates science, engineering, and technology to society.
+            The <a className="text-primary font-bold hover:text-[#0065CC] cursor-pointer transition-colors" href="https://www.wpi.edu/project-based-learning/project-based-education/interactive-qualifying-project" target="_blank">Interactive Qualifying Project (IQP)</a> is one of the most distinctive elements of the WPI Plan and WPI&apos;s signature project-based curriculum, giving every WPI student the experience of working in interdisciplinary teams to solve a problem or need that lies at the intersection of science and society. Unlike an academic course, this nine-credit-hour requirement involves students working in teams, with students not in their major, to tackle an issue that relates science, engineering, and technology to society.
           </p>
           <div className="flex justify-between items-center mt-2 mx-2">
             <p className="text-sm italic">WPI Website</p>
@@ -100,21 +103,21 @@ export default function DCT() {
         <div className="lg:my-8 my-4 p-4 grid lg:grid-cols-3 grid-cols-1 gap-4 mb-4">
           <div className="dark:bg-neutral-700 bg-neutral-200 rounded-md p-3">
             <p className="text-center font-semibold mb-1">Interviews</p>
-            <p className="text-6xl text-center text-[#007FFF] font-bold">95%</p>
+            <p className="text-6xl text-center text-primary font-bold">95%</p>
           </div>
           <div className="dark:bg-neutral-700 bg-neutral-200 rounded-md p-3">
             <p className="text-center font-semibold mb-1">Qualitative Data</p>
-            <p className="text-6xl text-center text-[#007FFF] font-bold">95%</p>
+            <p className="text-6xl text-center text-primary font-bold">95%</p>
           </div>
           <div className="dark:bg-neutral-700 bg-neutral-200 rounded-md p-3">
             <p className="text-center font-semibold mb-1">Quantitative Data</p>
-            <p className="text-6xl text-center text-[#007FFF] font-bold">55%</p>
+            <p className="text-6xl text-center text-primary font-bold">55%</p>
           </div>
         </div>
         <p className="lg:text-base text-sm">
           We also researched other existing data collection apps, to see what features they had and didn&apos;t have. We found that existing apps lacked features important to IQP students, while having extraneous features geared towards other types of users.
         </p>
-        <p className="font-black text-center text-[#007FFF] lg:my-8 my-4 lg:text-2xl text-lg">Our app is designed specifically for the WPI IQP experience!</p>
+        <p className="font-black text-center text-primary lg:my-8 my-4 lg:text-2xl text-lg">Our app is designed specifically for the WPI IQP experience!</p>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <SectionHeader icon={<LightBulbIcon />}>APPROACH</SectionHeader>
         <p className="lg:text-base text-sm">

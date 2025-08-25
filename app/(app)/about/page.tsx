@@ -71,8 +71,8 @@ export default function About() {
             <SectionHeader icon={<AcademicCapIcon />}>EDUCATION</SectionHeader>
             <div>
               <h3 className="lg:text-3xl text-2xl font-semibold mb-4">Worcester Polytechnic Institute</h3>
-              <p className="lg:text-2xl text-xl"><span className="lg:text-lg text-base text-[#007FFF] font-black mr-3">MAJOR</span>Computer Science</p>
-              <p className="lg:text-2xl text-xl"><span className="lg:text-lg text-base text-[#007FFF] font-black mr-3">MINOR</span>Data Science</p>
+              <p className="lg:text-2xl text-xl"><span className="lg:text-lg text-base text-primary font-black mr-3">MAJOR</span>Computer Science</p>
+              <p className="lg:text-2xl text-xl"><span className="lg:text-lg text-base text-primary font-black mr-3">MINOR</span>Data Science</p>
             </div>
             <p className="italic text-neutral-400">Graduated May 2025</p>
           </div>

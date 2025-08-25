@@ -1,7 +1,11 @@
+"use client"
+
 import { ExclamationCircleIcon, LightBulbIcon, BoltIcon, RocketLaunchIcon, CodeBracketIcon } from "@heroicons/react/24/solid";
 import Footer from "@/components/Footer";
 import NextProject from "@/components/NextProject";
 import SectionHeader from "@/components/SectionHeader";
+import { useScroll } from "motion/react";
+import ScrollIndicator from "@/components/ui/ScrollIndicator";
 
 export default function Kiosk() {
   const technologies: string[] = [
@@ -19,8 +23,11 @@ export default function Kiosk() {
     "Taiga",
     "Figma"
   ]
+  const { scrollYProgress } = useScroll()
+
   return (
     <div className="min-h-screen">
+      <ScrollIndicator scrollProgress={scrollYProgress} />
       <div className={"lg:ml-64 lg:mt-0 mt-24 lg:py-10 lg:px-48 p-6 min-h-screen"}>
         <div className="lg:flex lg:flex-row block justify-between items-center">
           <div className="lg:mb-0 mb-2">
@@ -79,8 +86,8 @@ export default function Kiosk() {
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <SectionHeader icon={<BoltIcon />}>FEATURES</SectionHeader>
         <div className="flex items-center">
-          <span className="flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#007FFF] text-[#007FFF] font-bold lg:text-base text-sm">1</span>
-          <p className="text-[#007FFF] font-semibold lg:text-lg ml-2">Hospital Pathfinding</p>
+          <span className="flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#007FFF] text-primary font-bold lg:text-base text-sm">1</span>
+          <p className="text-primary font-semibold lg:text-lg ml-2">Hospital Pathfinding</p>
         </div>
         <div className="ml-4 border-l-2 border-[#007FFF] pl-6 my-6">
           <div className="flex justify-center mb-4">
@@ -91,8 +98,8 @@ export default function Kiosk() {
           </p>
         </div>
         <div className="flex items-center">
-          <span className="flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#007FFF] text-[#007FFF] font-bold lg:text-base text-s">2</span>
-          <p className="text-[#007FFF] font-semibold lg:text-lg ml-2">Service Requests</p>
+          <span className="flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#007FFF] text-primary font-bold lg:text-base text-s">2</span>
+          <p className="text-primary font-semibold lg:text-lg ml-2">Service Requests</p>
         </div>
         <div className="ml-4 border-l-2 border-[#007FFF] pl-6 my-6">
           <div className="flex justify-center mb-4">
@@ -103,8 +110,8 @@ export default function Kiosk() {
           </p>
         </div>
         <div className="flex items-center">
-          <span className="flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#007FFF] text-[#007FFF] font-bold lg:text-base text-sm">3</span>
-          <p className="text-[#007FFF] font-semibold lg:text-lg ml-2">Map Editing</p>
+          <span className="flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#007FFF] text-primary font-bold lg:text-base text-sm">3</span>
+          <p className="text-primary font-semibold lg:text-lg ml-2">Map Editing</p>
         </div>
         <div className="ml-4 border-l-2 border-[#007FFF] pl-6 my-6">
           <div className="flex justify-center mb-4">
@@ -115,8 +122,8 @@ export default function Kiosk() {
           </p>
         </div>
         <div className="flex items-center">
-          <span className="flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#007FFF] text-[#007FFF] font-bold lg:text-base text-sm">4</span>
-          <p className="text-[#007FFF] font-semibold lg:text-lg ml-2">Statistics</p>
+          <span className="flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#007FFF] text-primary font-bold lg:text-base text-sm">4</span>
+          <p className="text-primary font-semibold lg:text-lg ml-2">Statistics</p>
         </div>
         <div className="ml-4 border-l-2 border-[#007FFF] pl-6 my-6">
           <div className="flex justify-center mb-4">

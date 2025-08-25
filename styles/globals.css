@@ -17,7 +17,7 @@ body {
   background: rgb(var(--background-rgb));
 }
 
-li a {
+/* li a {
   display: inline-block;
   transition: color 0.2s ease, transform 0.3s ease;
 }
@@ -25,7 +25,7 @@ li a {
 li a:hover {
   color: gray;
   transform: translateX(4px);
-}
+} */
 
 ol li {
   padding-left: 1.5em;
