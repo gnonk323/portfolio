@@ -142,7 +142,7 @@ export function FeatureImage ({ url, alt }: { url: string, alt: string }) {
 export function FeatureVideo ({ url }: { url: string }) {
   return (
     <div className="dark:bg-neutral-800 bg-neutral-200 rounded p-2">
-      <video autoPlay loop muted playsInline className="rounded-md max-w-screen-2xl mx-auto shadow-md">
+      <video autoPlay loop muted className="w-full rounded-md max-w-screen-2xl mx-auto shadow-md">
         <source src={url} />
       </video>
     </div>

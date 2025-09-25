@@ -116,10 +116,10 @@ export default function Navbar() {
           <div className="mt-6">
             <ul className="space-y-2">
               <li>
-                <a href={"/about"} className={"text-xl font-bold"}>About Me</a>
+                <a href={"/about"} className={"text-xl font-bold dark:hover:text-neutral-400 hover:text-neutral-500 transition-colors"}>About Me</a>
               </li>
               <li>
-                <a href={"/gustave-montana-resume.pdf"} target={"_blank"} className={"text-xl font-bold"}>Resume</a>
+                <a href={"/gustave-montana-resume.pdf"} target={"_blank"} className={"text-xl font-bold dark:hover:text-neutral-400 hover:text-neutral-500 transition-colors"}>Resume</a>
               </li>
             </ul>
           </div>
