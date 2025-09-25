@@ -1,5 +1,4 @@
-import AdventureImage, { ImageTile } from "@/components/AdventureImage";
-import Footer from "@/components/Footer";
+import { AdventureImage, type ImageTile } from "@/components/Images";
 
 export default async function Adventures() {
   const images: ImageTile[] = [

@@ -73,78 +73,76 @@ export default function Consensus() {
   }
 
   return (
-    <div className="min-h-screen">
-      <div className="lg:ml-64 lg:py-10 lg:px-48 lg:mt-0 mt-24 p-6 min-h-screen">
-        <div className="flex justify-between items-center">
-          <div>
-            <h1 className="lg:text-5xl text-3xl font-semibold">Consensus</h1>
-            <h2 className="lg:text-xl text-sm text-neutral-400">Get 4 chances to guess the consensus!</h2>
-          </div>
-          <a
-            href="https://consensus-game.vercel.app/"
-            target="_blank"
-            className="py-2 px-4 bg-[#0065CC] rounded-md hover:scale-105 transition-all text-white text-center"
-          >
-            Play Now!
-          </a>
+    <div className="lg:ml-64 lg:mt-0 mt-24 p-6 xl:px-20">
+      <div className="flex justify-between items-center">
+        <div>
+          <h1 className="lg:text-5xl text-3xl font-semibold">Consensus</h1>
+          <h2 className="lg:text-xl text-sm text-neutral-400">Get 4 chances to guess the consensus!</h2>
         </div>
-        <div className="lg:flex hidden justify-center items-center gap-8 my-16">
-          <div>
-            <div className="grid grid-cols-2 gap-2">
-              {tiles.map((tile, index) => 
-                tile.container === null ? (
-                  <div key={index} className="h-8 w-32">
-                    <Tile tile={tile} handleClick={handleTileClick} />
-                  </div>
-                ) : (
-                  <div key={index} className="h-8 w-32 rounded dark:bg-neutral-700 bg-neutral-300">
-                  </div>
-                )
-              )}
-            </div>
-            <h3 className="dark:text-neutral-300 font-semibold text-center mt-4">Category: Seasons</h3>
-          </div>
-          <div className="flex flex-col gap-2">
-            {[1, 2, 3, 4].map((containerId) => {
-              const tileInContainer = tiles.find(tile => tile.container === containerId);
-              return (
-                <div key={containerId} className="h-8 w-56">
-                  {tileInContainer ? (
-                    <Tile tile={tileInContainer} handleClick={handleTileClick} />
-                  ) : (
-                    <div className="h-8 w-56 border-2 dark:border-neutral-700 rounded flex items-center justify-center dark:text-neutral-700 text-xs select-none">
-                      {containerId}
-                    </div>
-                  )}
+        <a
+          href="https://consensus-game.vercel.app/"
+          target="_blank"
+          className="py-2 px-4 bg-[#0065CC] rounded-md hover:scale-105 transition-all text-white text-center"
+        >
+          Play Now!
+        </a>
+      </div>
+      <div className="lg:flex hidden justify-center items-center gap-8 my-16 xl:text-lg">
+        <div>
+          <div className="grid grid-cols-2 gap-2 xl:gap-3">
+            {tiles.map((tile, index) => 
+              tile.container === null ? (
+                <div key={index} className="h-8 xl:h-12 w-32 xl:w-48">
+                  <Tile tile={tile} handleClick={handleTileClick} />
                 </div>
-              );
-            })}
+              ) : (
+                <div key={index} className="h-8 xl:h-12 w-32 xl:w-48 rounded dark:bg-neutral-700 bg-neutral-300">
+                </div>
+              )
+            )}
           </div>
+          <h3 className="dark:text-neutral-300 font-semibold text-center mt-4">Category: Seasons</h3>
         </div>
-        <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
-        <SectionHeader icon={<CodeBracketIcon />}>TECHNOLOGY STACK</SectionHeader>
-        <div className="flex flex-wrap">
-          {technologies.map((tech: string, index: number) => {
+        <div className="flex flex-col gap-2 xl:gap-3">
+          {[1, 2, 3, 4].map((containerId) => {
+            const tileInContainer = tiles.find(tile => tile.container === containerId);
             return (
-              <div key={index} className="border border-neutral-600 rounded-full dark:bg-neutral-700 bg-neutral-300 font-semibold px-4 py-2 mr-2 mb-2 lg:text-base text-sm">{tech}</div>
-            )
+              <div key={containerId} className="h-8 xl:h-12 w-56 xl:w-64">
+                {tileInContainer ? (
+                  <Tile tile={tileInContainer} handleClick={handleTileClick} />
+                ) : (
+                  <div className="h-8 xl:h-12 w-56 xl:w-64 border-2 dark:border-neutral-700 rounded flex items-center justify-center dark:text-neutral-700 text-xs xl:text-sm select-none">
+                    {containerId}
+                  </div>
+                )}
+              </div>
+            );
           })}
         </div>
-        <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
-        <p className="lg:text-base text-sm mt-8">
-          Consensus is a game where every day there are 4 words that fit into a common category. You get four chances to guess what the consensus was, calculated from the opinions of everyone that submitted their rankings the previous day. After each guess, you&apos;re given a similarity score to quantify how close your guess was to the consensus, but we won&apos;t tell you which words were in the right or wrong places. Once you finish the game, you get to submit your ranking for tomorrow&apos;s category and your opinion will go towards determining that consensus.
-        </p>
-        <br />
-        <p>
-          In the archive, you can view the stats (both global and personal) for days you&apos;ve played, and play (try to guess the consensus) days you haven&apos;t.
-        </p>
-        <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
-        <p className="p-4 rounded-md border border-yellow-500 bg-yellow-500/15 mb-12 lg:text-base text-sm">
-          This was a pet project with a few of my friends! We&apos;ve had a great time building it, but currently the deployment is a little bit broken 😢. If it sounds cool, please reach out to me and I can give you a demo!
-        </p>
-        <NextProject path="/kiosk" title="Hospital Kiosk" />
-        <br className="lg:block hidden" />
       </div>
+      <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
+      <SectionHeader icon={<CodeBracketIcon />}>TECHNOLOGY STACK</SectionHeader>
+      <div className="flex flex-wrap">
+        {technologies.map((tech: string, index: number) => {
+          return (
+            <div key={index} className="border border-neutral-600 rounded-full dark:bg-neutral-700 bg-neutral-300 font-semibold px-4 py-2 mr-2 mb-2 lg:text-base text-sm">{tech}</div>
+          )
+        })}
+      </div>
+      <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
+      <p className="lg:text-base text-sm mt-8">
+        Consensus is a game where every day there are 4 words that fit into a common category. You get four chances to guess what the consensus was, calculated from the opinions of everyone that submitted their rankings the previous day. After each guess, you&apos;re given a similarity score to quantify how close your guess was to the consensus, but we won&apos;t tell you which words were in the right or wrong places. Once you finish the game, you get to submit your ranking for tomorrow&apos;s category and your opinion will go towards determining that consensus.
+      </p>
+      <br />
+      <p>
+        In the archive, you can view the stats (both global and personal) for days you&apos;ve played, and play (try to guess the consensus) days you haven&apos;t.
+      </p>
+      <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
+      <p className="p-4 rounded-md border border-yellow-500 bg-yellow-500/15 mb-12 lg:text-base text-sm">
+        This was a pet project with a few of my friends! We&apos;ve had a great time building it, but currently the deployment is a little bit broken 😢. If it sounds cool, please reach out to me and I can give you a demo!
+      </p>
+      <NextProject path="/kiosk" title="Hospital Kiosk" />
+      <br className="lg:block hidden" />
     </div>
   );
 }

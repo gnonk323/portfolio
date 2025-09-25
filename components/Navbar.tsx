@@ -107,7 +107,7 @@ export default function Navbar() {
         </div>
       </div>
       <aside
-        className={"lg:block hidden w-64 h-screen px-10 py-8 border-r dark:border-neutral-700 border-neutral-300 fixed"}>
+        className={"lg:block hidden w-64 h-screen px-10 py-8 border-r dark:border-neutral-700 border-neutral-300 fixed overflow-y-auto"}>
         <nav>
           <div className="flex justify-between items-center">
             <a href="/" className={"text-6xl font-black font-serif text-primary hover:text-[#0065CC] cursor-pointer transition-colors"}>GM</a>

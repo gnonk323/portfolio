@@ -34,7 +34,7 @@ function useCanHover(): boolean {
   return canHover;
 }
 
-export default function AdventureImage({ src, alt, location, locationHref, caption }: ImageTile) {
+export function AdventureImage({ src, alt, location, locationHref, caption }: ImageTile) {
   const [isHovering, setIsHovering] = useState(false);
   const [rotation, setRotation] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -129,4 +129,22 @@ export default function AdventureImage({ src, alt, location, locationHref, capti
       </AnimatePresence>
     </motion.div>
   );
+}
+
+export function FeatureImage ({ url, alt }: { url: string, alt: string }) {
+  return (
+    <div className="mb-4 dark:bg-neutral-800 bg-neutral-200 rounded p-2">
+      <img src={url} alt={alt} className="w-full rounded-md max-w-screen-2xl mx-auto shadow-md" />
+    </div>
+  )
+}
+
+export function FeatureVideo ({ url }: { url: string }) {
+  return (
+    <div className="dark:bg-neutral-800 bg-neutral-200 rounded p-2">
+      <video autoPlay loop muted playsInline className="rounded-md max-w-screen-2xl mx-auto shadow-md">
+        <source src={url} />
+      </video>
+    </div>
+  )
 }

@@ -1,11 +1,11 @@
 "use client"
 
 import { ExclamationCircleIcon, LightBulbIcon, BoltIcon, RocketLaunchIcon, CodeBracketIcon } from "@heroicons/react/24/solid";
-import Footer from "@/components/Footer";
 import NextProject from "@/components/NextProject";
 import SectionHeader from "@/components/SectionHeader";
 import { useScroll } from "motion/react";
 import ScrollIndicator from "@/components/ui/ScrollIndicator";
+import { FeatureImage } from "@/components/Images";
 
 export default function Kiosk() {
   const technologies: string[] = [
@@ -26,9 +26,9 @@ export default function Kiosk() {
   const { scrollYProgress } = useScroll()
 
   return (
-    <div className="min-h-screen">
+    <>
       <ScrollIndicator scrollProgress={scrollYProgress} />
-      <div className={"lg:ml-64 lg:mt-0 mt-24 lg:py-10 lg:px-48 p-6 min-h-screen"}>
+      <div className={"lg:ml-64 lg:mt-0 mt-24 p-6 xl:px-24"}>
         <div className="lg:flex lg:flex-row block justify-between items-center">
           <div className="lg:mb-0 mb-2">
             <h1 className="lg:text-5xl text-4xl font-semibold">Hospital Kiosk App</h1>
@@ -40,7 +40,7 @@ export default function Kiosk() {
             <a href="/bwh-user-manual.pdf" target="_blank" className="hover:underline">User Manual</a>
           </div>
         </div>
-        <img src="/images/bwhMOCK.png" alt="" className="max-w-[80%] mx-auto" />
+        <img src="/images/bwhMOCK.png" alt="" className="max-w-[80%] xl:max-w-[60%] mx-auto" />
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <SectionHeader icon={<CodeBracketIcon />}>TECHNOLOGY STACK</SectionHeader>
         <div className="flex flex-wrap">
@@ -90,9 +90,7 @@ export default function Kiosk() {
           <p className="text-primary font-semibold lg:text-lg ml-2">Hospital Pathfinding</p>
         </div>
         <div className="ml-4 border-l-2 border-[#007FFF] pl-6 my-6">
-          <div className="flex justify-center mb-4">
-            <img src="/images/kiosk/pathfinding-demo.gif" alt="Pathfinding demo" className="w-full rounded-md" />
-          </div>
+          <FeatureImage url="/images/kiosk/pathfinding-demo.gif" alt="Pathfinding demo" />
           <p className="lg:text-base text-sm">
             One of the main features of the application was that it had to be able to give the user directions from one point of the hospital to another, using a pathing algorithm of their choice. It also had to provide text directions, guiding the user down hallways, telling them which way to turn, and which elevators and stairways they should use. My team implemented an additional feature which allows the user to scan a QR code containing the directions, so they can follow along on their phone.
           </p>
@@ -102,9 +100,7 @@ export default function Kiosk() {
           <p className="text-primary font-semibold lg:text-lg ml-2">Service Requests</p>
         </div>
         <div className="ml-4 border-l-2 border-[#007FFF] pl-6 my-6">
-          <div className="flex justify-center mb-4">
-            <img src="/images/kiosk/dashboard-demo.gif" alt="Dashboard demo" className="w-full rounded-md" />
-          </div>
+          <FeatureImage url="/images/kiosk/dashboard-demo.gif" alt="Dashboard demo" />
           <p className="lg:text-base text-sm">
             The other core requirement of the application was the ability for a logged-in staff member to be able to use the kiosk to make a service request of their choice, as well as view any active service requests. Our group chose to follow a dashboard approach to making and viewing service requests. The user picks the service request they’d like to make using the dropdown menu at the top of the form on the right, fills out the form, and submits it to the hospital’s system (not actually). Upon their submission, the active request appears in the table on the left, which is complete with sorting and filtering capabilities. The staff member can also choose to expand the active requests table.
           </p>
@@ -114,9 +110,7 @@ export default function Kiosk() {
           <p className="text-primary font-semibold lg:text-lg ml-2">Map Editing</p>
         </div>
         <div className="ml-4 border-l-2 border-[#007FFF] pl-6 my-6">
-          <div className="flex justify-center mb-4">
-            <img src="/images/kiosk/map-edit.png" alt="Table with map node information" className="w-full rounded-md" />
-          </div>
+          <FeatureImage url="/images/kiosk/map-edit.png" alt="Table with map node information" />
           <p className="lg:text-base text-sm">
             When logged in, admins (not just any staff members) are able to delete all of the map nodes and edges and upload new nodes and edges. They are also able to interact directly with the map, where they can drag nodes and edges, delete individual nodes and edges, and edit the location of nodes by changing their X and Y coordinates.
           </p>
@@ -126,25 +120,23 @@ export default function Kiosk() {
           <p className="text-primary font-semibold lg:text-lg ml-2">Statistics</p>
         </div>
         <div className="ml-4 border-l-2 border-[#007FFF] pl-6 my-6">
-          <div className="flex justify-center mb-4">
-            <img src="/images/kiosk/stats.png" alt="Statistics page with graphs" className="w-full rounded-md" />
-          </div>
+          <FeatureImage url="/images/kiosk/stats.png" alt="Statistics page with graphs" />
           <p className="lg:text-base text-sm">
             Staff members can view a statistics page, where they can find a wide variety of information breaking down the distribution of the number of requests. There are bar charts showing the number of requests by type, priority, status, and user, and a pie chart showing the percentage of requests by any of those same parameters.
           </p>
         </div>
         <hr className={"h-px lg:my-12 my-6 dark:bg-neutral-700 bg-neutral-300 border-0"} />
         <SectionHeader icon={<RocketLaunchIcon />}>TAKEAWAYS</SectionHeader>
-        <div className="dark:bg-neutral-800 bg-neutral-400 rounded-md p-4 grid lg:grid-cols-3 grid-cols-1 gap-4 mb-4">
-          <div className="dark:bg-neutral-700 bg-neutral-300 rounded-md p-3">
+        <div className="dark:bg-neutral-800 bg-neutral-300 rounded-md p-4 grid lg:grid-cols-3 grid-cols-1 gap-4 mb-4">
+          <div className="dark:bg-neutral-700 bg-neutral-200 rounded-md p-3 shadow-md border border-neutral-300 dark:border-neutral-600">
             <p className="font-semibold mb-1">Full-stack Development</p>
             <p className="text-sm">Although I focused on front-end, I spent time interacting with the back-end and I got a lot of valuable experience with creating full-stack features.</p>
           </div>
-          <div className="dark:bg-neutral-700 bg-neutral-300 rounded-md p-3">
+          <div className="dark:bg-neutral-700 bg-neutral-200 rounded-md p-3 shadow-md border border-neutral-300 dark:border-neutral-600">
             <p className="font-semibold mb-1">Leadership</p>
             <p className="text-sm">I didn&apos;t start out a lead developer, but by the end of the term I had taken a leadership role. Team members came to me with questions, and I was able to develop my leadership skills.</p>
           </div>
-          <div className="dark:bg-neutral-700 bg-neutral-300 rounded-md p-3">
+          <div className="dark:bg-neutral-700 bg-neutral-200 rounded-md p-3 shadow-md border border-neutral-300 dark:border-neutral-600">
             <p className="font-semibold mb-1">Agile Development</p>
             <p className="text-sm">This was my first time using the Agile methodology for software development, and the fast paced nature of 1-week sprints was overwhelming at times, but effective.</p>
           </div>
@@ -156,6 +148,6 @@ export default function Kiosk() {
         <NextProject path="/dct" title="Data Collection Tool" />
         <br />
       </div>
-    </div>
+    </>
   );
 }
